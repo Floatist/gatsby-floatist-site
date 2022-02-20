@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #0097BE;
+    margin-top: 60px;
+}
+
+.footer-logo {
+    padding-bottom: 30px;
+}
+
+.footer-title {
+    font-weight: 600;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 12px;
+}
+

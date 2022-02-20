@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { navbar } from './navigation.module.css'
 
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -11,7 +10,7 @@ import Nav from 'react-bootstrap/Nav'
 const Navigation = () => {
 
     return (
-        <Navbar className={navbar} bg="white" variant="light" expand="lg">
+        <Navbar className={navbar} bg="light" variant="light" expand="lg">
             <Container>
                 <Navbar.Brand>
                     <Link to="/">
@@ -24,31 +23,28 @@ const Navigation = () => {
                         />
                     </Link>
                 </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse id="navbarResponsive">
+                    <Nav as="ul">
+                        <Nav.Item as="li">
+                            <Link to="/about" className="nav-link" activeClassName="active">About</Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Link to="/features" className="nav-link" activeClassName="active">Features</Link>
+                        </Nav.Item>
+                        <Nav.Item as="li">
+                            <Link to="/pricing" className="nav-link" activeClassName="active">Pricing</Link>
+                        </Nav.Item>
 
-                    <Navbar.Toggle />
-                    <Navbar.Collapse id="navbarResponsive">
-                        <Nav as="ul">
-                            <Nav.Item as="li">
-                                <Link to="/about" className="nav-link" activeClassName="active">About</Link>
-                            </Nav.Item>
-                            <Nav.Item as="li">
-                                <Link to="/features" className="nav-link" activeClassName="active">Features</Link>
-                            </Nav.Item>
-                            <Nav.Item as="li">
-                                <Link to="/pricing" className="nav-link" activeClassName="active">Pricing</Link>
-                            </Nav.Item>
-
-                        </Nav>
-                        <Nav as="ul" className="ms-auto">
-                            <Nav.Item as="li">
-                                <Link to="/contact" className="btn btn-outline-primary" role="button" activeClassName="active">Contact us</Link>
-                            </Nav.Item >
-                        </Nav>
-                    </Navbar.Collapse>
-
-
+                    </Nav>
+                    {/* Align this one to the right */}
+                    <Nav as="ul" className="ms-auto">
+                        <Nav.Item as="li">
+                            <Link to="/contact" className="btn btn-outline-primary" role="button" activeClassName="active">Contact us</Link>
+                        </Nav.Item >
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
-
         </Navbar>
     )
 }

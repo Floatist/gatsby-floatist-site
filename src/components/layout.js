@@ -5,16 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap';
 
 import { heading } from './layout.module.css'
-import Navbar from './navigation'
+import Navigation from './navigation'
+import Footer from './footer';
 
 const Layout = ({ pageTitle, children }) => {
     return (
         <div>
             <title>{pageTitle}</title>
-            <Navbar />
+            <Navigation />
             <Container>
                 {children}
             </Container>
+            <Footer />
         </div>
     )
 }
