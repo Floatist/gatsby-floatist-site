@@ -1,30 +1,21 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { container, heading, navLinks, navLinkItem, navLinkText } from './layout.module.css'
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { Container } from 'react-bootstrap';
+
+import { heading } from './layout.module.css'
+import Navbar from './navigation'
 
 const Layout = ({ pageTitle, children }) => {
-  return (
-    <div className={container}>
-      <title>{pageTitle}</title>
-      <nav>
-        <ul className={navLinks}>
-            <li className={navLinkItem}>
-                <Link to="/">
-                  Home
-                </Link>
-            </li>
-            <li className={navLinkText}>
-                <Link to="/about" className={navLinkText}>
-                  About
-                </Link>
-            </li>
-        </ul>
-      </nav>
-      <main>
-        <h1  className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
-    </div>
-  )
+    return (
+        <div>
+            <title>{pageTitle}</title>
+            <Navbar />
+            <Container>
+                {children}
+            </Container>
+        </div>
+    )
 }
 export default Layout
