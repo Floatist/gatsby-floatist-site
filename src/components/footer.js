@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import { Container, Row, Col, Nav } from 'react-bootstrap'
 
 import { footer, footerLink, footerLogo, footerTitle, footerCopyright } from './footer.module.css'
@@ -13,13 +15,14 @@ const Footer = () => {
                     {/* Logo */}
                     <Col xs={12} sm={4} className={footerLogo}>
                         <Link to="/">
-                            <img
+                            <StaticImage
                                 alt="floatist"
-                                src="/images/logo-white.png"
+                                src="../images/logo-white.png"
                                 width="140"
                                 height="auto"
                                 className="d-inline-block align-top"
                             />
+                            
                         </Link>
                     </Col>
 

@@ -1,7 +1,9 @@
 import * as React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import { Row, Col, Container, Button } from 'react-bootstrap'
 import { contactButton, learnButton } from './heroSection.module.css'
 import { title, section, featureText } from './layout.module.css'
+
 
 
 const HeroSection = () => {
@@ -18,7 +20,11 @@ const HeroSection = () => {
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={5} lg={5} xl={5}>
-                    <img src="/images/marina.jpg" class="img-fluid" alt="..."></img>
+                    <StaticImage
+                     src="../images/marina.jpg" 
+                     class="img-fluid" 
+                     alt="marina"
+                    />
                 </Col>
             </Row>
         </Container>

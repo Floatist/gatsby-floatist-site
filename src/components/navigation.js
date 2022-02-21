@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import { navbar } from './navigation.module.css'
 
 import Container from 'react-bootstrap/Container'
@@ -14,9 +15,9 @@ const Navigation = () => {
             <Container>
                 <Navbar.Brand>
                     <Link to="/">
-                        <img
+                        <StaticImage
                             alt="floatist"
-                            src="/images/logo.png"
+                            src="../images/logo.png"
                             width="140"
                             height="auto"
                             className="d-inline-block align-top"

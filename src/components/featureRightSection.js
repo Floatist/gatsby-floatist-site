@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import { Row, Col, Container } from 'react-bootstrap'
 import { title, section, featureText } from './layout.module.css'
 
@@ -10,7 +12,11 @@ const FeatureRightSection = (props) => {
         <Container className={section}>
             <Row className="align-items-center">
                 <Col xs={12} sm={12} md={5} lg={5} xl={5}>
-                    <img src="/images/app.jpg" class="img-fluid" alt="..."></img>
+                    <StaticImage
+                     src="../images/app.jpg" 
+                     class="img-fluid" 
+                     alt="app"
+                    />
                 </Col>
                 <Col xs={12} sm={12} md={7} lg={7} xl={7}>
                     <div className={featureText}>
