@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-import { Container, Row, Col, Nav } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import { footer, footerLink, footerLogo, footerTitle, footerCopyright } from './footer.module.css'
 

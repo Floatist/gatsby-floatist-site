@@ -3,8 +3,9 @@
     padding-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #0097BE;
-    margin-top: 60px;
+    /* background-color: #0097BE; */
+    background-color: #262626;
+    color: white;
 }
 
 .footer-logo {

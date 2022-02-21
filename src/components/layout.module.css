@@ -1,6 +1,14 @@
 .title {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: poppins;
+
+}
+
+.subtitle {
+    /* color: red; */
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
 }
 
 .section {

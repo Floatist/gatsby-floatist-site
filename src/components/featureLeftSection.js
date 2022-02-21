@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
-import { title, section, featureText } from './layout.module.css'
+import { title, subtitle, section, featureText } from './layout.module.css'
 
 
 const FeatureLeftSection = (props) => {
@@ -13,7 +13,7 @@ const FeatureLeftSection = (props) => {
                 <Col xs={12} sm={12} md={7} lg={7} xl={7}>
                     <div className={featureText}>
                         <h1 className={title}>{props.title}</h1>
-                        <h5>{props.subtitle}</h5>
+                        <h5 className={subtitle}>{props.subtitle}</h5>
                         <Link to={props.link}>View features</Link>
                     </div>
 

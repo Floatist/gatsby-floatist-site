@@ -1,12 +1,10 @@
 import * as React from "react"
-import { Container } from "react-bootstrap"
 import FeatureRightSection from "../components/featureRightSection"
 import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
 import Layout from "../components/layout"
-
-// css
-import { section } from '../components/layout.module.css'
+import Activation from "../components/activation"
+import FeaturesRow from "../components/featuresRow"
 
 // markup
 const IndexPage = () => {
@@ -27,10 +25,16 @@ const IndexPage = () => {
       />
 
       {/* TRIPLE FEATURE SECTION ROW */}
+      <FeaturesRow />
 
       {/* TESTIMONIALS */}
 
+      {/* ACTIVATION */}
+      <Activation />
+
       {/* NEWSLETTER */}
+
+
     </Layout>
   )
 }
