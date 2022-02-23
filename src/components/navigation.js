@@ -17,9 +17,8 @@ const Navigation = () => {
                         <StaticImage
                             alt="floatist"
                             src="../images/logo.png"
-                            width="140"
-                            height="auto"
                             className="d-inline-block align-top"
+                            width={150}
                         />
                     </Link>
                 </Navbar.Brand>
@@ -27,13 +26,13 @@ const Navigation = () => {
                 <Navbar.Collapse id="navbarResponsive">
                     <Nav as="ul">
                         <Nav.Item as="li" className={navItem}>
-                            <Link to="/about" className="nav-link" activeClassName="active">About</Link>
-                        </Nav.Item >
-                        <Nav.Item as="li" className={navItem}>
-                            <Link to="/features" className="nav-link" activeClassName="active">Features</Link>
+                            <Link to="/product" className="nav-link" activeClassName="active">Product</Link>
                         </Nav.Item>
                         <Nav.Item as="li" className={navItem}>
-                            <Link to="/pricing" className="nav-link" activeClassName="active">Pricing</Link>
+                            <Link to="/integrations" className="nav-link" activeClassName="active">Integrations</Link>
+                        </Nav.Item >
+                        <Nav.Item as="li" className={navItem}>
+                            <Link to="/blog" className="nav-link" activeClassName="active">Blog</Link>
                         </Nav.Item>
 
                     </Nav>

@@ -13,7 +13,7 @@ const HeroSection = () => {
             <Row className="align-items-center">
                 <Col xs={12} sm={12} md={7} lg={7} xl={7}>
                     <div className={featureText}>
-                        <h1 className={title}>The full-rigging app for the yacht charter industry</h1>
+                        <h1 className={title}>The only tool you need to manage your fleet</h1>
                         <h5 className={subtitle}>Optimize your business processes and improve your customer's experience</h5>
                         <Button size="lg" variant="secondary" className={contactButton}>Contact us</Button>
                         <Button size="lg" variant="outline-secondary" className={learnButton}>Learn more</Button>
@@ -22,7 +22,7 @@ const HeroSection = () => {
                 <Col xs={12} sm={12} md={5} lg={5} xl={5}>
                     <StaticImage
                      src="../images/marina.jpg" 
-                     class="img-fluid" 
+                     className="img-fluid" 
                      alt="marina"
                     />
                 </Col>

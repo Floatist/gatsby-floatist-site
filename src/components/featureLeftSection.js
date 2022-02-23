@@ -21,7 +21,7 @@ const FeatureLeftSection = (props) => {
                 <Col xs={12} sm={12} md={5} lg={5} xl={5}>
                     <StaticImage
                      src="../images/graphic1.jpg" 
-                     class="img-fluid" 
+                     className="img-fluid" 
                      alt="graphic"
                     />
                 </Col>

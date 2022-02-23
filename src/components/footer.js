@@ -18,8 +18,7 @@ const Footer = () => {
                             <StaticImage
                                 alt="floatist"
                                 src="../images/logo-white.png"
-                                width="140"
-                                height="auto"
+                                width={140}
                                 className="d-inline-block align-top"
                             />
                             
@@ -32,6 +31,8 @@ const Footer = () => {
                             <ul className="list-unstyled">
                                 <li><Link to="/" className={footerLink}>Features</Link></li>
                                 <li><Link to="/" className={footerLink}>Contact us</Link></li>
+                                <li><Link to="/support" className={footerLink}>Support</Link></li>
+
                             </ul>
                         </Col>
 

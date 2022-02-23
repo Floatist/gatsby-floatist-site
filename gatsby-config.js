@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-      title: `tutorial-site`,
+      title: `Floatist`,
         siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
