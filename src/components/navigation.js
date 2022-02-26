@@ -1,24 +1,26 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { navbar, navItem } from './navigation.module.css'
-
+import { navbar, navItem, navbarBrand, navButton } from './navigation.module.css'
+import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
+import './navigation.module.css'
+
 const Navigation = () => {
 
     return (
-        <Navbar className={navbar} bg="light" variant="light" expand="lg">
+        <Navbar className={navbar} variant="light" expand="lg">
             <Container>
-                <Navbar.Brand>
+                <Navbar.Brand className={navbarBrand}>
                     <Link to="/">
                         <StaticImage
                             alt="floatist"
                             src="../images/logo.png"
                             className="d-inline-block align-top"
-                            width={150}
+                            width={120}
                         />
                     </Link>
                 </Navbar.Brand>
@@ -39,7 +41,9 @@ const Navigation = () => {
                     {/* Align this one to the right */}
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
-                            <Link to="/contact" className="btn btn-outline-primary" role="button" activeClassName="active">Contact us</Link>
+                            <Button className={navButton} size="lg">
+                                <Link to="/contact" role="button" activeClassName="active">Contact us</Link>
+                            </Button>
                         </Nav.Item >
                     </Nav>
                 </Navbar.Collapse>

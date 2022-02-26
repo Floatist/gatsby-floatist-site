@@ -3,8 +3,7 @@
     padding-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
-    /* background-color: #0097BE; */
-    background-color: #262626;
+    background-color: #0097BE;
     color: white;
 }
 
@@ -19,6 +18,10 @@
 .footer-link {
     text-decoration: none;
     color: black;
+}
+
+.footer-link:hover {
+    color:azure;
 }
 
 .footer-copyright {
