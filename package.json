@@ -14,11 +14,16 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "bootstrap": "^5.1.0",
     "font-awesome": "^4.7.0",
     "gatsby": "^4.7.2",
     "gatsby-plugin-image": "^2.7.0",
+    "gatsby-plugin-mdx": "^2.0.0",
     "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-remark-autolink-headers": "^5.8.0",
+    "gatsby-remark-images": "^6.8.1",
     "gatsby-source-filesystem": "^4.7.0",
     "react": "^17.0.1",
     "react-bootstrap": "^2.1.2",
