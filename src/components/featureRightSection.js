@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import { Row, Col, Container } from 'react-bootstrap'
-import { title, section, featureText, featureLink, row } from './featureSection.module.css'
+import { title, section, featureText, featureLink, row } from './featureRightSection.module.css'
 
 
 const FeatureRightSection = (props) => {
