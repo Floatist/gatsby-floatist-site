@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import { container, bg, contactButton, learnButton, heroText, heroImage, heroSection } from './heroSection.module.css'
+import { container, bg, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 import { title, subtitle } from './layout.module.css'
 
 import styled from "styled-components";
@@ -32,7 +32,7 @@ const HeroSection = () => {
                                 </StyledButtonOutline>
                             </div>
                         </Col>
-                        <Col xs={12} sm={12} md={4} lg={4} xl={4} className={heroImage}>
+                        <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                             <StaticImage
                                 src="../images/heroGraphic.png"
                                 loading="eager"

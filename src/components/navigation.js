@@ -11,22 +11,24 @@ import './navigation.module.css'
 
 const Navigation = () => {
 
-    const [navBackground, setNavBackground] = useState(transparent)
+
+    const [navBackground, setNavBackground] = useState({ backgroundColor: "transparent"})
     const navRef = React.useRef()
     navRef.current = navBackground
 
-    const transparent = {
-        backgroundColor: "transparent",
-        border: "none"
-    }
-
-    const white = {
-        backgroundColor: "white",
-        border: "solid",
-        borderColor: "#5A5B67"
-    }
-
     useEffect(() => {
+
+        const transparent = {
+            backgroundColor: "transparent",
+            border: "none"
+        }
+
+        const white = {
+            backgroundColor: "white",
+            border: "solid",
+            borderColor: "#5A5B67"
+        }
+
         const handleScroll = () => {
             const show = window.scrollY > 100
             if (show) {
