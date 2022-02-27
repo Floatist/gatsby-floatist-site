@@ -11,17 +11,28 @@ import './navigation.module.css'
 
 const Navigation = () => {
 
-    const [navBackground, setNavBackground] = useState('transparent')
+    const [navBackground, setNavBackground] = useState(transparent)
     const navRef = React.useRef()
     navRef.current = navBackground
+
+    const transparent = {
+        backgroundColor: "transparent",
+        border: "none"
+    }
+
+    const white = {
+        backgroundColor: "white",
+        border: "solid",
+        borderColor: "#5A5B67"
+    }
 
     useEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > 100
             if (show) {
-                setNavBackground('white')
+                setNavBackground(white)
             } else {
-                setNavBackground('transparent')
+                setNavBackground(transparent)
             }
         }
         document.addEventListener('scroll', handleScroll)
@@ -30,8 +41,10 @@ const Navigation = () => {
         }
     }, [])
 
+    // bg={navBackground}
+
     return (
-        <Navbar className={navbar} variant="light fixed-top" expand="lg" bg={navBackground}>
+        <Navbar className={navbar} variant="light fixed-top" expand="lg" style={navBackground}>
             <Container>
                 <Navbar.Brand className={navbarBrand}>
                     <Link to="/">
