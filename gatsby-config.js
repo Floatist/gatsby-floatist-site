@@ -15,6 +15,7 @@ module.exports = {
       },
       "gatsby-plugin-mdx", // render mdx content
       "gatsby-remark-images", // For responsive images within mdx content
-      "gatsby-remark-autolink-headers" // To automatically create links in mdx content
+      "gatsby-remark-autolink-headers", // To automatically create links in mdx content
+      "gatsby-plugin-styled-components"
     ]
 }

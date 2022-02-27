@@ -7,8 +7,6 @@ import { withPrefix, useStaticQuery, graphql } from 'gatsby'
 import Navigation from './navigation'
 import Footer from './footer';
 
-
-
 const Layout = ({ pageTitle, children }) => {
 
     const data = useStaticQuery(graphql`

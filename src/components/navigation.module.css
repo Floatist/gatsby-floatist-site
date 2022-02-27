@@ -19,14 +19,18 @@ a {
 }
 
 a:hover {
-    color: lightgrey;
+    color: white;
 }
 
-.nav-button, .nav-button:hover {
+.nav-button {
     font-size: 0.9rem;
     background-color: #5A5B67;
     color: white;
     border: none;
     text-decoration: none !important;
     border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #343A3F;
 }

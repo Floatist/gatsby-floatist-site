@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { navbar, navItem, navbarBrand, navButton } from './navigation.module.css'
@@ -11,8 +11,27 @@ import './navigation.module.css'
 
 const Navigation = () => {
 
+    const [navBackground, setNavBackground] = useState('transparent')
+    const navRef = React.useRef()
+    navRef.current = navBackground
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 100
+            if (show) {
+                setNavBackground('white')
+            } else {
+                setNavBackground('transparent')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
-        <Navbar className={navbar} variant="light" expand="lg">
+        <Navbar className={navbar} variant="light fixed-top" expand="lg" bg={navBackground}>
             <Container>
                 <Navbar.Brand className={navbarBrand}>
                     <Link to="/">

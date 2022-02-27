@@ -52,3 +52,9 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+## Notes
+Background images used using css property 'background-image': save in /static/images/ folder
+
+Images used in components directly: save in /src/images/ folder and use gatsby StaticImage component
