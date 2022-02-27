@@ -35,7 +35,7 @@ const HeroSection = () => {
                         <Col xs={12} sm={12} md={4} lg={4} xl={4}>
                             <StaticImage
                                 src="../images/heroGraphic.png"
-                                loading="eager"
+                                className="img-fluid"
                                 alt="apps"
                             />
                         </Col>

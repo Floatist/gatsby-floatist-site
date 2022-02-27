@@ -1,10 +1,30 @@
-.activation {
-    background-color: #FBFBFB;
-    padding-top: 80px;
-    padding-bottom:  80px;
+.section {
+    background-color: white;
+    height: calc(100vh / 2);
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
 .activation-button {
-    margin-top: 20px;
+    font-size: 1.1rem;
+    background-color: #5A5B67;
+    color: white;
+    border: none;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+
+.activation-button:hover {
+    background-color: #343A3F;
+}
+
+.feature-title {
+    font-family: 'rosario';
+    padding: 20px 0 20px 0;
+}
+
+.feature-text {
+    font-family: poppins;
+    font-size: 1rem;
 }
