@@ -3,32 +3,37 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import { Row, Col, Container } from 'react-bootstrap'
-import { title, subtitle, section, featureText } from './layout.module.css'
+import { title, section, featureText, featureLink, row } from './featureSection.module.css'
 
 
 const FeatureRightSection = (props) => {
 
     return (
-        <Container className={section}>
-            <Row className="align-items-center">
-                <Col xs={12} sm={12} md={5} lg={5} xl={5}>
-                    <StaticImage
-                     src="../images/app.jpg" 
-                     className="img-fluid" 
-                     alt="app"
-                    />
-                </Col>
-                <Col xs={12} sm={12} md={7} lg={7} xl={7}>
-                    <div className={featureText}>
-                        <h1 className={title}>{props.title}</h1>
-                        <h5 className={subtitle}>{props.subtitle}</h5>
-                        <Link to={props.link}>View features</Link>
-                    </div>
+        <div className={section}>
+            <Container>
+                <Row className={row}>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} className="text-center">
+                        <StaticImage
+                            src="../images/mobile-checkin.png"
+                            className="img-fluid"
+                            alt="app"
+                            width={250}
+                        />
+                    </Col>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} >
+                        <div className={featureText}>
+                            <h1 className={title}>{props.title}</h1>
+                            <p className={featureText}>{props.subtitle}</p>
+                            <Link to="/product" className={featureLink}>View features</Link>
+                        </div>
 
-                </Col>
+                    </Col>
 
-            </Row>
-        </Container>
+                </Row>
+            </Container>
+        </div>
+
+
     )
 }
 

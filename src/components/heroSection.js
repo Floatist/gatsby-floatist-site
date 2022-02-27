@@ -19,29 +19,28 @@ const HeroSection = () => {
             </div>
             <div className={heroSection}>
                 <Container className={container}>
-                <Row className="align-items-center">
-                    <Col xs={12} sm={12} md={6} lg={6} xl={5}>
-                        <div className={heroText}>
-                            <h1 className={title}>The only tool you need to manage your fleet</h1>
-                            <h5 className={subtitle}>Optimize your business processes and improve your customer's experience</h5>
-                            <StyledButton size="lg" className={contactButton}>
-                                <Link to="/contact" >Contact us</Link>
-                            </StyledButton>
-                            <StyledButtonOutline size="lg" className={learnButton}>
-                                <Link to="/" >Learn more</Link>
-                            </StyledButtonOutline>
-                        </div>
-                    </Col>
-                    <Col xs={12} sm={12} md={4} lg={4} xl={4} className={heroImage}>
-                        <StaticImage
-                            src="../images/heroGraphic.png"
-                            loading="eager"
-                            alt="apps"
-                        />
-                    </Col>
-                </Row>
+                    <Row className="align-items-center">
+                        <Col xs={12} sm={12} md={6} lg={6} xl={5}>
+                            <div className={heroText}>
+                                <h1 className={title}>The only tool you need to manage your fleet</h1>
+                                <h5 className={subtitle}>Optimize your business processes and improve your customer's experience</h5>
+                                <StyledButton size="lg" className={contactButton}>
+                                    <Link to="/contact" >Contact us</Link>
+                                </StyledButton>
+                                <StyledButtonOutline size="lg" className={learnButton}>
+                                    <Link to="/" >Learn more</Link>
+                                </StyledButtonOutline>
+                            </div>
+                        </Col>
+                        <Col xs={12} sm={12} md={4} lg={4} xl={4} className={heroImage}>
+                            <StaticImage
+                                src="../images/heroGraphic.png"
+                                loading="eager"
+                                alt="apps"
+                            />
+                        </Col>
+                    </Row>
                 </Container>
-
             </div>
         </div>
 

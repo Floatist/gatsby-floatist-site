@@ -1,4 +1,5 @@
 .container {
+    /* So it doesnt scroll horizontally */
     overflow: hidden;
     position: relative;
 }
