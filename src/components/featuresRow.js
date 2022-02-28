@@ -10,11 +10,11 @@ const FeaturesRow = () => {
 
     return (
         <div className={section}>
-            <Container justify-content-center>
+            <Container>
                 <Row className={row}>
                     <Col sm={4} className={column}>
                         <StaticImage
-                            src="../images/random.png"
+                            src="../images/booking.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}
@@ -26,7 +26,7 @@ const FeaturesRow = () => {
                     </Col>
                     <Col sm={4} className={column}>
                         <StaticImage
-                            src="../images/random.png"
+                            src="../images/reporting.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}
@@ -38,7 +38,7 @@ const FeaturesRow = () => {
                     </Col>
                     <Col sm={4} className={column}>
                         <StaticImage
-                            src="../images/random.png"
+                            src="../images/hiring.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}

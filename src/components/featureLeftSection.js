@@ -23,7 +23,7 @@ const FeatureLeftSection = (props) => {
                             src="../images/maintenance.png"
                             className="img-fluid"
                             alt="maintenance"
-                            width={300}
+                            width={350}
                         />
                     </Col>
                 </Row>

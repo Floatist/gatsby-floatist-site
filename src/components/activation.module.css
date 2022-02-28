@@ -1,6 +1,4 @@
 .section {
-    background-color: white;
-    height: calc(100vh / 2);
     display: flex;
     align-items: center;
     text-align: center;
@@ -13,15 +11,16 @@
     border: none;
     text-decoration: none !important;
     border-radius: 10px;
+    margin: 0 10px 60px 10px;
 }
 
 .activation-button:hover {
     background-color: #343A3F;
 }
 
-.feature-title {
+.activation-title {
     font-family: 'rosario';
-    padding: 20px 0 20px 0;
+    padding: 60px 0 20px 0;
 }
 
 .feature-text {
