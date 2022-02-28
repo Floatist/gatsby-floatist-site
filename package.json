@@ -1,8 +1,8 @@
 {
-  "name": "tutorial-site",
+  "name": "floatist-site",
   "version": "1.0.0",
   "private": true,
-  "description": "tutorial-site",
+  "description": "floatist-site",
   "keywords": [
     "gatsby"
   ],

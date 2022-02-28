@@ -18,6 +18,8 @@ const Navigation = () => {
 
     useEffect(() => {
 
+        const height = window.innerHeight
+
         const transparent = {
             backgroundColor: "transparent",
             border: "none"
@@ -30,7 +32,8 @@ const Navigation = () => {
         }
 
         const handleScroll = () => {
-            const show = window.scrollY > 100
+            console.log('scrolling', height)
+            const show = window.scrollY > height / 12
             if (show) {
                 setNavBackground(white)
             } else {

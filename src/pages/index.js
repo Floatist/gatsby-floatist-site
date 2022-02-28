@@ -9,8 +9,9 @@ import FeaturesRow from "../components/featuresRow"
 // markup
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Floatist">
-      {/* HERO SECTION LEFT*/}
+    <Layout pageTitle="The only tool you need">
+
+      {/* HERO SECTION*/}
       <HeroSection />
       <FeatureRightSection
         title="Mobile check-in / out"

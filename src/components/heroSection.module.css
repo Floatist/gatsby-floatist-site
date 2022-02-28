@@ -4,6 +4,8 @@
     position: relative;
 }
 
+/* I had to create a container with two divs inside to be able to get the background image as desired. Basically one div (.container)
+holds two completely overlapping divs (.bg and .hero-section) */
 .bg {
     /* So it completely overlaps with the actual herosection */
     position: absolute;

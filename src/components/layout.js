@@ -32,7 +32,15 @@ const Layout = ({ pageTitle, children }) => {
             {/* ROSARIO FONT */}
             <link rel="stylesheet" href="https://use.typekit.net/gfb1bjo.css"></link> 
             <Helmet>
-                <script src={withPrefix('freshchat.js')} type="text/javascript" />
+                <script src={withPrefix('freshchat.js')} type="text/javascript"/>
+            </Helmet>
+
+            <Helmet>
+                <script src='//eu.fw-cdn.com/10218683/155970.js' chat='false'></script>
+            </Helmet>
+
+            <Helmet>
+                <script src={withPrefix('freshsales.js')} type="text/javascript"/>
             </Helmet>
 
             <Navigation />

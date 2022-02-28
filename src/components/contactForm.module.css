@@ -1,0 +1,32 @@
+.contact-title {
+    font-family: poppins;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+/* MEDIUM AND LARGE SCREENS */
+@media screen and (min-width: 400px) {
+    .section {
+        max-width: 400px;
+        margin: 150px 10px 100px 10px;
+    }
+}
+
+/* SMALL SCREEN WIDTH */
+@media screen and (max-width: 400px) {
+    .section {
+        margin: 200px 10px 100px 10px;
+    }
+}
+
+.contact-button {
+    margin: 10px 0 10px 0;
+}
+
+
+
+
