@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { navbar, navItem, navbarBrand, navButton } from './navigation.module.css'
+import { navbar, navItem, navbarBrand, navButton, navbarCollapse } from './navigation.module.css'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
@@ -12,7 +12,7 @@ import './navigation.module.css'
 const Navigation = () => {
 
 
-    const [navBackground, setNavBackground] = useState({ backgroundColor: "transparent"})
+    const [navBackground, setNavBackground] = useState({ backgroundColor: "transparent" })
     const navRef = React.useRef()
     navRef.current = navBackground
 
@@ -32,7 +32,6 @@ const Navigation = () => {
         }
 
         const handleScroll = () => {
-            console.log('scrolling', height)
             const show = window.scrollY > height / 12
             if (show) {
                 setNavBackground(white)
@@ -61,8 +60,11 @@ const Navigation = () => {
                         />
                     </Link>
                 </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse id="navbarResponsive">
+
+                <Navbar.Toggle className={navbarCollapse}/>
+
+
+                <Navbar.Collapse id="navbarResponsive" className={navbarCollapse}>
                     <Nav as="ul">
                         <Nav.Item as="li" className={navItem}>
                             <Link to="/product" className="nav-link" activeClassName="active">Product</Link>
@@ -79,11 +81,14 @@ const Navigation = () => {
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
                             <Button className={navButton} size="lg">
-                                <Link to="/contact" role="button" activeClassName="active">Contact us</Link>
+                                <Link to="/contact" role="button" activeClassName="active"><i class="fa-solid fa-envelope"></i> Contact us</Link>
                             </Button>
                         </Nav.Item >
                     </Nav>
                 </Navbar.Collapse>
+
+
+
             </Container>
         </Navbar>
     )

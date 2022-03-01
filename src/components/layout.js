@@ -23,16 +23,21 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <div>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            
+
             {/* FONTS FROM GOOGLE FONTS */}
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&family=Poppins:wght@200;300;400;500&family=Roboto+Slab:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
-            
+            <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&family=Josefin+Sans:wght@300;400&family=Poppins:wght@200;300;500&family=Roboto+Slab:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"/>
+
             {/* ROSARIO FONT */}
-            <link rel="stylesheet" href="https://use.typekit.net/gfb1bjo.css"></link> 
+            <link rel="stylesheet" href="https://use.typekit.net/gfb1bjo.css"></link>
+
+            {/* FONTAWESOME */}
             <Helmet>
-                <script src={withPrefix('freshchat.js')} type="text/javascript"/>
+                <script src="https://kit.fontawesome.com/47e715a13a.js" crossOrigin="anonymous"></script>
+            </Helmet>
+            <Helmet>
+                <script src={withPrefix('freshchat.js')} type="text/javascript" />
             </Helmet>
 
             <Helmet>
@@ -40,13 +45,11 @@ const Layout = ({ pageTitle, children }) => {
             </Helmet>
 
             <Helmet>
-                <script src={withPrefix('freshsales.js')} type="text/javascript"/>
+                <script src={withPrefix('freshsales.js')} type="text/javascript" />
             </Helmet>
 
             <Navigation />
-            {/* <Container> */}
             {children}
-            {/* </Container> */}
             <Footer />
         </div>
     )

@@ -36,17 +36,6 @@
     align-items: center;
 }
 
-.title {
-    font-size: 2.5rem;
-    font-weight: 300;
-    font-family: 'rosario';
-}
-
-.feature-text {
-    font-family: poppins;
-    font-size: 1rem;
-}
-
 .feature-link {
     text-decoration: underline;
     color: #0097BE;

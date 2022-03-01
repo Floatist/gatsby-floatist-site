@@ -4,7 +4,16 @@
     font-size: 0.9rem;
     font-family: poppins;
     margin: 10px 10px 10px 10px;
+    border-radius: 12px;
 }
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        background-color: white;
+        border-radius: 12px;
+    }
+}
+
 
 .navbar-brand {
     margin-right: 70px;
@@ -35,3 +44,4 @@ a:hover {
 .nav-button:hover {
     background-color: #343A3F;
 }
+

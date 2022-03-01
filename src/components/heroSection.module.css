@@ -57,10 +57,13 @@ holds two completely overlapping divs (.bg and .hero-section) */
 .contact-button {
     margin-right: 20px;
     margin-top: 20px;
+    width: 200px;
+    
 }
 
 .learn-button {
     margin-top: 20px;
     border-radius: 12px;
     font-size: 0.9rem;
+    width: 200px;
 }

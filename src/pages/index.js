@@ -15,13 +15,13 @@ const IndexPage = () => {
       <HeroSection />
       <FeatureRightSection
         title="Mobile check-in / out"
-        subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peak!"
+        subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peaks."
         link="/features"
       />
 
       <FeatureLeftSection 
         title="Maintenance scheduling and tracking"
-        subtitle="Create tasks for one off and scheduled maintenance. Record repairs during checkout. Assign to team members and add photos and comments directly from the mobile app!"
+        subtitle="Create tasks for one off and scheduled maintenance. Record repairs during checkout. Assign to team members and add photos and comments directly from the mobile app."
         link="/features"
       />
 

@@ -51,13 +51,8 @@
 }
 
 .feature-title {
-    font-family: 'rosario';
     padding: 20px 0 20px 0;
-}
-
-.feature-text {
-    font-family: poppins;
-    font-size: 1rem;
+    /* font-weight: bold; */
 }
 
 .feature-link {

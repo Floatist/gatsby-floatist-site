@@ -29,8 +29,8 @@ const Footer = () => {
                         <Col xs={6} sm={2}>
                             <p className={footerTitle}>PRODUCT</p>
                             <ul className="list-unstyled">
-                                <li><Link to="/" className={footerLink}>Features</Link></li>
-                                <li><Link to="/" className={footerLink}>Contact us</Link></li>
+                                <li><Link to="/product" className={footerLink}>Features</Link></li>
+                                <li><Link to="/contact" className={footerLink}>Contact us</Link></li>
                                 <li><Link to="/support" className={footerLink}>Support</Link></li>
 
                             </ul>
@@ -50,7 +50,7 @@ const Footer = () => {
                             <p className={footerTitle}>COMPANY</p>
                             <ul className="list-unstyled">
                                 <li><Link to="/" className={footerLink}>Careers</Link></li>
-                                <li><Link to="/" className={footerLink}>Teams</Link></li>
+                                <li><Link to="/about" className={footerLink}>Team</Link></li>
 
                             </ul>
                         </Col>
@@ -65,7 +65,7 @@ const Footer = () => {
                         </Col>
 
                     <div className={footerCopyright}>
-                        <p className="text-center">&copy; Floatist {new Date().getFullYear()}</p>
+                        <p className="text-center">&copy; Floatist {new Date().getFullYear()} <i class="fa-solid fa-sailboat"></i></p>
                     </div>
                 </Row>
 
