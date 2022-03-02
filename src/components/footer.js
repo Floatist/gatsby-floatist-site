@@ -65,7 +65,7 @@ const Footer = () => {
                         </Col>
 
                     <div className={footerCopyright}>
-                        <p className="text-center">&copy; Floatist {new Date().getFullYear()} <i class="fa-solid fa-sailboat"></i></p>
+                        <p className="text-center">&copy; Floatist {new Date().getFullYear()} <i className="fa-solid fa-sailboat"></i></p>
                     </div>
                 </Row>
 

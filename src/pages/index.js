@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
-import { getImage, GatsbyImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import FeatureRightSection from "../components/featureRightSection"
 import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
@@ -11,27 +11,26 @@ import FeaturesRow from "../components/featuresRow"
 // markup
 const IndexPage = ({ data }) => {
 
-  const image = getImage(data.file)
-  console.log(data.file.id)
+  // const image = getImage(data.file)
 
   return (
     <Layout pageTitle="The only tool you need">
 
       {/* HERO SECTION*/}
-      <HeroSection 
-        image={image}
-      />
+      <HeroSection />
 
       <FeatureRightSection
         title="Mobile check-in / out"
         subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peaks."
-        link="/features"
+        link="/product"
+        image={getImage(data.mobileCheckin)}
       />
 
       <FeatureLeftSection 
         title="Maintenance scheduling and tracking"
         subtitle="Create tasks for one off and scheduled maintenance. Record repairs during checkout. Assign to team members and add photos and comments directly from the mobile app."
-        link="/features"
+        link="/product"
+        image={getImage(data.maintenance)}
       />
 
       {/* TRIPLE FEATURE SECTION ROW */}
@@ -49,15 +48,25 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export const query = graphql`
-query {
-  file(relativePath: {eq: "heroGraphic.png"}) {
+export const imageData = graphql`
+  fragment imageData on File {
     id
     childImageSharp {
-      gatsbyImageData
+      gatsbyImageData(height: 250)
     }
+  }
+`
+
+export const query = graphql`
+query {
+  mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
+    ...imageData
+  }
+  maintenance: file(relativePath: {eq: "maintenance.png"}) {
+    ...imageData
   }
 }
 
 `
+
 export default IndexPage

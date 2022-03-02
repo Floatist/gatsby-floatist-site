@@ -14,6 +14,7 @@ const SecondaryButton = styled(Button)`
   }
 
   font-family: poppins;
+  font-size: 20px;
 `
 
 export default SecondaryButton

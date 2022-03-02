@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
-import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,7 +8,7 @@ import SecondaryButton from '../styles/styled-component/SecondaryButton'
 import PrimaryButtonOutline from '../styles/styled-component/PrimaryButtonOutline'
 import { container, bg, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 
-const HeroSection = (props) => {
+const HeroSection = () => {
 
     return (
         <div className={container}>
@@ -32,12 +32,12 @@ const HeroSection = (props) => {
                             </div>
                         </Col>
                         <Col xs={12} sm={12} md={5} lg={5} xl={5}>
-                            {/* <StaticImage
+                            <StaticImage
                                 src="../images/heroGraphic.png"
                                 className="img-fluid"
                                 alt="apps"
-                            /> */}
-                            <GatsbyImage image={props.image}/>
+                            />
+                            {/* <GatsbyImage image={props.image} alt="graphic"/> */}
 
                         </Col>
                     </Row>

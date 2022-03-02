@@ -81,7 +81,7 @@ const Navigation = () => {
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
                             <Button className={navButton} size="lg">
-                                <Link to="/contact" role="button" activeClassName="active"><i class="fa-solid fa-envelope"></i> Contact us</Link>
+                                <Link to="/contact" role="button" activeClassName="active"><i className="fa-solid fa-envelope"></i> Contact us</Link>
                             </Button>
                         </Nav.Item >
                     </Nav>

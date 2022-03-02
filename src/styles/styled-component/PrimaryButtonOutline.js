@@ -21,6 +21,7 @@ const PrimaryButtonOutline = styled(Button)`
     }
 }
   font-family: poppins;
+  font-size: 20px;
 `
 
 export default PrimaryButtonOutline

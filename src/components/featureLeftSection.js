@@ -1,11 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
 import { section, featureLink, row } from './featureLeftSection.module.css'
 
 
 const FeatureLeftSection = (props) => {
+
+    const createLink = () => {
+        if (props.link) {
+            return <Link to={props.link} className={featureLink}>View features<i className="fa-solid fa-arrow-right"></i></Link>
+        } else {
+            return ''
+        }
+    }
 
     return (
         <div className={section}>
@@ -15,15 +23,13 @@ const FeatureLeftSection = (props) => {
                         <div>
                             <h1>{props.title}</h1>
                             <p>{props.subtitle}</p>
-                            <Link to="/product" className={featureLink}>View features <i class="fa-solid fa-arrow-right"></i></Link>
+                            {createLink()}
                         </div>
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className="text-center">
-                        <StaticImage
-                            src="../images/maintenance.png"
-                            className="img-fluid"
-                            alt="maintenance"
-                            width={450}
+                        <GatsbyImage
+                            image={props.image}
+                            alt="graphic"
                         />
                     </Col>
                 </Row>
