@@ -1,4 +1,6 @@
 import * as React from "react"
+import { graphql } from 'gatsby'
+import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import FeatureRightSection from "../components/featureRightSection"
 import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
@@ -7,12 +9,19 @@ import Activation from "../components/activation"
 import FeaturesRow from "../components/featuresRow"
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+
+  const image = getImage(data.file)
+  console.log(data.file.id)
+
   return (
     <Layout pageTitle="The only tool you need">
 
       {/* HERO SECTION*/}
-      <HeroSection />
+      <HeroSection 
+        image={image}
+      />
+
       <FeatureRightSection
         title="Mobile check-in / out"
         subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peaks."
@@ -40,4 +49,15 @@ const IndexPage = () => {
   )
 }
 
+export const query = graphql`
+query {
+  file(relativePath: {eq: "heroGraphic.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+}
+
+`
 export default IndexPage

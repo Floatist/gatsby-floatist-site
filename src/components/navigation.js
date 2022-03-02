@@ -70,7 +70,7 @@ const Navigation = () => {
                             <Link to="/product" className="nav-link" activeClassName="active">Product</Link>
                         </Nav.Item>
                         <Nav.Item as="li" className={navItem}>
-                            <Link to="/integrations" className="nav-link" activeClassName="active">Integrations</Link>
+                            <Link to="/about" className="nav-link" activeClassName="active">About</Link>
                         </Nav.Item >
                         <Nav.Item as="li" className={navItem}>
                             <Link to="/blog" className="nav-link" activeClassName="active">Blog</Link>

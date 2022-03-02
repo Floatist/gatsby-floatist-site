@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import PrimaryButton from '../styles/styled-component/PrimaryButton'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { section, contactTitle, contactForm, phoneInput, contactButton } from './contactForm.module.css'
+import { section, contactTitle, contactButton } from './contactForm.module.css'
 
 class ContactForm extends React.Component {
 
@@ -46,7 +46,7 @@ class ContactForm extends React.Component {
         return (
             <Container fluid className={section}>
                 <h2 className={contactTitle} >Request a demo</h2>
-                <Form onSubmit={this.handleSubmit} className={contactForm}>
+                <Form onSubmit={this.handleSubmit}>
                     <Stack gap={2}>
                         <Stack direction="horizontal" gap={3}>
                             <Form.Group>
@@ -73,7 +73,7 @@ class ContactForm extends React.Component {
                                 <Form.Control type="text" name="city" value={this.state.city} onChange={this.handleInputChange} placeholder="Enter value" />
                             </Form.Group>
                         </Stack>
-                        <Form.Group className={phoneInput}>
+                        <Form.Group>
                             <Form.Label>Phone</Form.Label>
                             <PhoneInput defaultCountry="US" name="phone" placeholder="Enter phone" value={this.state.phone} onChange={(phone) => this.setState({ phone })} />
                         </Form.Group>
