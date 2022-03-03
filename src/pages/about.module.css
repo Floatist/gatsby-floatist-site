@@ -1,0 +1,46 @@
+.blue-shape {
+    color: white;
+    width: 200px;
+    height: 200px;
+    background-color: #0097BE;
+    top: 320px;
+    left: -160px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.beige-shape {
+    color: white;
+    width: 200px;
+    height: 320px;
+    background-color: #DDD1C5;
+    top: 100px;
+    right: -150px;
+    border-radius: 70%;
+    position: absolute;
+}
+
+/* MEDIUM AND LARGE SCREENS */
+@media screen and (min-width: 400px) {
+    .section {
+        max-width: 950px;
+        margin: 150px auto 100px auto;
+        text-align: center;
+    }
+}
+
+/* SMALL SCREEN WIDTH */
+@media screen and (max-width: 400px) {
+    .section {
+        margin: 200px auto 100px auto;
+        text-align: left;
+    }
+}
+
+.paragraph {
+    max-width: 650px;
+    margin: auto;
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 1.1rem;
+}

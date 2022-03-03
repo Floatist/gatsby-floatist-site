@@ -5,7 +5,7 @@ const PrimaryButtonOutline = styled(Button)`
   text-color: #0097BE;
   background-color: transparent;
   border-color: #0097BE;
-  border-radius: 12px;
+  border-radius: 5px;
   &:hover {
       background-color: #0097BE;
       border-color: #0097BE;
@@ -15,13 +15,13 @@ const PrimaryButtonOutline = styled(Button)`
     color: white !important;
   }
   a {
+    text-decoration: none;
     color: #0097BE;
     &:hover {
         color: white;
     }
 }
-  font-family: poppins;
-  font-size: 20px;
+font-family: poppins;
 `
 
 export default PrimaryButtonOutline

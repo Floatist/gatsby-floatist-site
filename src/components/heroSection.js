@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -8,20 +8,32 @@ import SecondaryButton from '../styles/styled-component/SecondaryButton'
 import PrimaryButtonOutline from '../styles/styled-component/PrimaryButtonOutline'
 import { container, bg, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 
-const HeroSection = () => {
+const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
+
+    const titleStyle = {
+        fontSize: '50px',
+        fontFamily: 'Helvetica Neue',
+        fontWeight: '700'
+    }
+
+    const paragraphStyle = {
+        fontSize: '18px',
+        fontFamily: 'poppins',
+        fontWeight: '300'
+    }
 
     return (
         <div className={container}>
-            <div className={bg}>
+            <div className={bg} style={{ backgroundImage: `url(${backgroundUrl})`}}>
                 Floatist
             </div>
             <div className={heroSection}>
                 <Container className={container}>
                     <Row className="align-items-center">
-                        <Col xs={12} sm={12} md={6} lg={6} xl={5}>
-                            <div className={heroText}>
-                                <h1>The only tool you need to manage your fleet</h1>
-                                <p>Optimize your business processes and improve your customer's experience</p>
+                        <Col xs={12} sm={12} md={7} lg={7} xl={6} mt={6} className="my-auto">
+                            <div className={heroText} >
+                                <h1 style={titleStyle}>{title}</h1>
+                                <p style={paragraphStyle}>{subtitle}</p>
                                 <SecondaryButton size="lg" className={contactButton}>
                                     <Link to="/contact">Request a demo</Link>
                                 </SecondaryButton>
@@ -31,13 +43,8 @@ const HeroSection = () => {
                                 
                             </div>
                         </Col>
-                        <Col xs={12} sm={12} md={5} lg={5} xl={5}>
-                            <StaticImage
-                                src="../images/heroGraphic.png"
-                                className="img-fluid"
-                                alt="apps"
-                            />
-                            {/* <GatsbyImage image={props.image} alt="graphic"/> */}
+                        <Col xs={12} sm={12} md={5} lg={5} xl={5} className="my-auto">
+                            <GatsbyImage image={image} alt="graphic"/>
 
                         </Col>
                     </Row>

@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
-import FeatureLeftSection from '../components/featureLeftSection'
-import FeatureRightSection from '../components/featureRightSection'
 import Layout from '../components/layout'
+import FeatureRightSection from '../components/featureRightSection'
+import FeatureLeftSection from '../components/featureLeftSection'
 import HeroSection from '../components/heroSection'
+import Activation from '../components/activation'
 
 const ProductPage = ({ data }) => {
 
@@ -13,7 +14,11 @@ const ProductPage = ({ data }) => {
     return (
         <Layout pageTitle="Product">
             {/* HERO SECTION*/}
-            <HeroSection />
+            <HeroSection 
+                title="Handle all your processes from one tool"
+                subtitle="No need for duplicate administrative tasks from a multitude of tools. We've got your back."
+                backgroundUrl="/images/fok.jpg"
+            />
 
             <FeatureRightSection
                 title="Booking management"
@@ -45,6 +50,8 @@ const ProductPage = ({ data }) => {
                 image={getImage(data.reporting)}
             />
 
+            <Activation />
+
         </Layout>
     )
 }
@@ -60,6 +67,9 @@ export const imageData = graphql`
 
 export const query = graphql`
 query {
+  hero: file(relativePath: {eq: "laptop-and-phone.png"}) {
+    ...imageData
+  }
   booking: file(relativePath: {eq: "booking.png"}) {
     ...imageData
   }

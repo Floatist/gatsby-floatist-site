@@ -1,23 +1,24 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
 import { getImage } from "gatsby-plugin-image"
+import Layout from "../components/layout"
 import FeatureRightSection from "../components/featureRightSection"
 import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
-import Layout from "../components/layout"
 import Activation from "../components/activation"
 import FeaturesRow from "../components/featuresRow"
 
-// markup
 const IndexPage = ({ data }) => {
-
-  // const image = getImage(data.file)
 
   return (
     <Layout pageTitle="The only tool you need">
-
       {/* HERO SECTION*/}
-      <HeroSection />
+      <HeroSection 
+        title="The only tool you need to manage your fleet"
+        subtitle="Optimize your business processes and improve your customer's experience"
+        image={getImage(data.hero)}
+        backgroundUrl="/images/ropes.jpg"
+      />
 
       <FeatureRightSection
         title="Mobile check-in / out"
@@ -59,6 +60,9 @@ export const imageData = graphql`
 
 export const query = graphql`
 query {
+  hero: file(relativePath: {eq: "laptop-and-phone.png"}) {
+    ...imageData
+  }
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
     ...imageData
   }

@@ -5,16 +5,19 @@ import styled from 'styled-components'
 const SecondaryButton = styled(Button)`
   background-color: #5A5B67;
   border-color: #5A5B67;
-  border-radius: 12px;
+  border-radius: 5px;
   color: white !important;
   &:hover {
       background-color: #343A3F;
       border-color: #343A3F;
       color: white;
   }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
   font-family: poppins;
-  font-size: 20px;
 `
 
 export default SecondaryButton

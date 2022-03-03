@@ -11,7 +11,14 @@ module.exports = {
         resolve: "gatsby-source-filesystem", // query data using graphql
         options: {
           name: `blog`,
-          path: `${__dirname}/blog`,
+          path: `${__dirname}/content/blog`,
+        }
+      },
+      {
+        resolve: "gatsby-source-filesystem", // query data using graphql
+        options: {
+          name: `blog`,
+          path: `${__dirname}/content`,
         }
       },
       {
@@ -24,6 +31,7 @@ module.exports = {
       "gatsby-plugin-mdx", // render mdx content
       "gatsby-remark-images", // For responsive images within mdx content
       "gatsby-remark-autolink-headers", // To automatically create links in mdx content
-      "gatsby-plugin-styled-components"
+      "gatsby-plugin-styled-components",
+      "@mediacurrent/gatsby-plugin-silence-css-order-warning" // to silence css order warnings because they don't actually produce problems
     ]
 }

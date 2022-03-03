@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { navbar, navItem, navbarBrand, navButton, navbarCollapse } from './navigation.module.css'
-import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-
-import './navigation.module.css'
+import Stack from 'react-bootstrap/Stack'
+import SecondaryButton from '../styles/styled-component/SecondaryButton'
+import { navbar, navItem, navbarBrand, navbarCollapse, navButton, navLogin } from './navigation.module.css'
 
 const Navigation = () => {
 
@@ -45,8 +44,6 @@ const Navigation = () => {
         }
     }, [])
 
-    // bg={navBackground}
-
     return (
         <Navbar className={navbar} variant="light fixed-top" expand="lg" style={navBackground}>
             <Container>
@@ -61,7 +58,7 @@ const Navigation = () => {
                     </Link>
                 </Navbar.Brand>
 
-                <Navbar.Toggle className={navbarCollapse}/>
+                <Navbar.Toggle className={navbarCollapse} />
 
 
                 <Navbar.Collapse id="navbarResponsive" className={navbarCollapse}>
@@ -80,9 +77,13 @@ const Navigation = () => {
                     {/* Align this one to the right */}
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
-                            <Button className={navButton} size="lg">
-                                <Link to="/contact" role="button" activeClassName="active"><i className="fa-solid fa-envelope"></i> Contact us</Link>
-                            </Button>
+                            <Stack direction="horizontal" gap={4}>
+                                <Link to="/contact" className={navLogin} activeClassName="active">Sign in</Link>
+                                <SecondaryButton className={navButton}>
+                                    <Link to="/contact" activeClassName="active"><i className="fa-solid fa-envelope"></i> Contact us</Link>
+                                </SecondaryButton>
+                            </Stack>
+
                         </Nav.Item >
                     </Nav>
                 </Navbar.Collapse>

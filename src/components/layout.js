@@ -1,5 +1,4 @@
 import * as React from 'react'
-import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Helmet from 'react-helmet';
 import { withPrefix, useStaticQuery, graphql } from 'gatsby'
