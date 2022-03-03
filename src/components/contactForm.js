@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import PrimaryButton from '../styles/styled-component/PrimaryButton'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { section, phone, form, contactButton } from './contactForm.module.css'
+import { section, form, contactButton } from './contactForm.module.css'
 
 class ContactForm extends React.Component {
 
@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
                         </Stack>
                         <Form.Group>
                             <Form.Label>Phone</Form.Label>
-                            <PhoneInput className={phone} defaultCountry="US" name="phone" placeholder="Enter phone" value={this.state.phone} onChange={(phone) => this.setState({ phone })} />
+                            <PhoneInput defaultCountry="US" name="phone" placeholder="Enter phone" value={this.state.phone} onChange={(phone) => this.setState({ phone })} />
                         </Form.Group>
                         <div className="d-grid gap-2">
                             <PrimaryButton type="submit" size="lg" className={contactButton}>

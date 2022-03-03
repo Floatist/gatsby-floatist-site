@@ -1,8 +1,43 @@
+.title {
+    margin: 12px 0 5px 0;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Helvetica Neue';
+}
+
+.category {
+    font-size: 14px;
+    color: #0097BE;
+    margin-top: 12px;
+}
+
+.abstract {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.image {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2px;
+}
+
 /* MEDIUM AND LARGE SCREENS */
 @media screen and (min-width: 400px) {
     .section {
-        max-width: 400px;
         margin: 150px auto 100px auto;
+        padding: 0 60px 0 60px;
     }
 }
 
@@ -10,5 +45,6 @@
 @media screen and (max-width: 400px) {
     .section {
         margin: 200px auto 100px auto;
+        padding: 0 20px 0 20px;
     }
 }
