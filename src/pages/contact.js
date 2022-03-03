@@ -31,7 +31,7 @@ const ContactPage = () => {
                                     <i class="fa-solid fa-check"></i> Get pricing information
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-check"></i> Explore use cases for your team
+                                    <i class="fa-solid fa-check"></i> Explore use cases for your business
                                 </li>
                             </ul>
                         </Container>

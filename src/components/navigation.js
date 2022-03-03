@@ -26,8 +26,7 @@ const Navigation = () => {
 
         const white = {
             backgroundColor: "white",
-            border: "solid",
-            borderColor: "#5A5B67"
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
         }
 
         const handleScroll = () => {
