@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import PrimaryButton from '../styles/styled-component/PrimaryButton'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { section, contactTitle, contactButton } from './contactForm.module.css'
+import { section, phone, form, contactButton } from './contactForm.module.css'
 
 class ContactForm extends React.Component {
 
@@ -32,7 +32,7 @@ class ContactForm extends React.Component {
             "First name": this.state.firstName,
             "Last name": this.state.lastName,
             "Email": this.state.email,
-            "Phone": `+{this.state.phone}`,
+            "Mobile": `+${this.state.phone}`,
             "Charter company name": this.state.companyName,
             "Charter base city": this.state.city
         }
@@ -45,8 +45,7 @@ class ContactForm extends React.Component {
     render() {
         return (
             <Container fluid className={section}>
-                <h2 className={contactTitle} >Request a demo</h2>
-                <Form onSubmit={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit} className={form}>
                     <Stack gap={2}>
                         <Stack direction="horizontal" gap={3}>
                             <Form.Group>
@@ -75,7 +74,7 @@ class ContactForm extends React.Component {
                         </Stack>
                         <Form.Group>
                             <Form.Label>Phone</Form.Label>
-                            <PhoneInput defaultCountry="US" name="phone" placeholder="Enter phone" value={this.state.phone} onChange={(phone) => this.setState({ phone })} />
+                            <PhoneInput className={phone} defaultCountry="US" name="phone" placeholder="Enter phone" value={this.state.phone} onChange={(phone) => this.setState({ phone })} />
                         </Form.Group>
                         <div className="d-grid gap-2">
                             <PrimaryButton type="submit" size="lg" className={contactButton}>

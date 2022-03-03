@@ -7,21 +7,12 @@
     margin: 10px 0 10px 0;
 }
 
-
-/* MEDIUM AND LARGE SCREENS */
-@media screen and (min-width: 400px) {
-    .section {
-        max-width: 400px;
-        margin: 150px 10px 100px 10px;
-    }
+.section {
+    max-width: 550px;
 }
 
-/* SMALL SCREEN WIDTH */
-@media screen and (max-width: 400px) {
-    .section {
-        margin: 200px 10px 100px 10px;
-    }
+.form {
+    padding: 35px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
-

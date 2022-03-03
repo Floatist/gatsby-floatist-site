@@ -94,10 +94,14 @@ holds two completely overlapping divs (.bg and .hero-section) */
     margin-top: 20px;
     font-size: 0.9rem;
     width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .learn-button {
     margin-top: 20px;
     font-size: 0.9rem;
     width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
