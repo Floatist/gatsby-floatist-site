@@ -13,11 +13,16 @@
 
 .footer-title {
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .footer-link {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: 'poppins';
+    font-size: 1rem;
+    line-height: 2.3;
+    font-weight: 300;
 }
 
 .footer-link:hover {

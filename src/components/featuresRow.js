@@ -2,50 +2,53 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { StaticImage } from 'gatsby-plugin-image'
-import { section, row, column, featureTitle, featureLink } from './featuresRow.module.css'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { container, section, row, column, featureTitle, paragraph, featureLink } from './featuresRow.module.css'
 import { Container } from 'react-bootstrap'
 
-const FeaturesRow = () => {
+const FeaturesRow = ({ leftTitle, leftPar, middleTitle, middlePar, rightTitle, rightPar, leftImage, middleImage, rightImage}) => {
 
     return (
         <div className={section}>
-            <Container>
+            <Container fluid className={container}>
                 <Row className={row}>
                     <Col sm={4} className={column}>
-                        <StaticImage
+                        {/* <StaticImage
                             src="../images/booking.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}
-                        />
-                        <h3 className={featureTitle}>Booking management</h3>
-                        <p>Directly push your availability to leading aggregators such as Nausys, MMK and Yacht Sentinel. No need to duplicate you data input in several different providers.</p>
-                        <Link to="/product" className={featureLink}>Learn more</Link>
+                        /> */}
+                        <GatsbyImage image={leftImage} />
+                        <h3 className={featureTitle}>{leftTitle}</h3>
+                        <p className={paragraph}>{leftPar}</p>
+                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                     <Col sm={4} className={column}>
-                        <StaticImage
+                        {/* <StaticImage
                             src="../images/reporting.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}
-                        />
-                        <h3 className={featureTitle}>Reporting</h3>
-                        <p>Run and download reports to share with any stakeholders. Provide a login to boat owners and empower them to keep track of their boats record.</p>
-                        <Link to="/product" className={featureLink}>Learn more</Link>
+                        /> */}
+                        <GatsbyImage image={middleImage} />
+                        <h3 className={featureTitle}>{middleTitle}</h3>
+                        <p className={paragraph}>{middlePar}</p>
+                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                     <Col sm={4} className={column}>
-                        <StaticImage
+                        {/* <StaticImage
                             src="../images/hiring.png"
                             className="img-fluid"
                             alt="icon"
                             width={100}
-                        />
-                        <h3 className={featureTitle}>Find top notch crew</h3>
-                        <p>Use our crew portal to invite captains and chefs for your charters. Choose from our extensive network of the highest rated certified crew. Finding, assigning and paying crew has never been easier.</p>
-                        <Link to="/product" className={featureLink}>Learn more</Link>
+                        /> */}
+                        <GatsbyImage image={rightImage}/>
+                        <h3 className={featureTitle}>{rightTitle}</h3>
+                        <p className={paragraph}>{rightPar}</p>
+                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                 </Row>

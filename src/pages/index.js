@@ -8,7 +8,7 @@ import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
 import Activation from "../components/activation"
 import FeaturesRow from "../components/featuresRow"
-import { container, beigeShape, sandShape, rockShape } from './index.module.css'
+import { container, beigeShape, rockShape } from './index.module.css'
 
 const IndexPage = ({ data }) => {
 
@@ -18,32 +18,41 @@ const IndexPage = ({ data }) => {
 
       <div className={beigeShape}></div>
       <div className={rockShape}></div>
-      {/* Decoration right */}
 
       <Layout pageTitle="The only tool you need">
         <HeroSection
-          title="The only tool you need to manage your fleet"
-          subtitle="Optimize your business processes and improve your customer's experience"
+          title={data.mdx.frontmatter.heroTitle}
+          subtitle={data.mdx.frontmatter.heroSubtitle}
           image={getImage(data.hero)}
           backgroundUrl="/images/ropes.jpg"
         />
 
         <FeatureRightSection
-          title="Mobile check-in / out"
-          subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peaks."
+          title={data.mdx.frontmatter.firstFeatureTitle}
+          subtitle={data.mdx.frontmatter.firstFeaturePar}
           link="/product"
           image={getImage(data.mobileCheckin)}
         />
 
         <FeatureLeftSection
-          title="Maintenance scheduling and tracking"
-          subtitle="Create tasks for one off and scheduled maintenance. Record repairs during checkout. Assign to team members and add photos and comments directly from the mobile app."
+          title={data.mdx.frontmatter.secondFeatureTitle}
+          subtitle={data.mdx.frontmatter.secondFeaturePar}
           link="/product"
           image={getImage(data.maintenance)}
         />
 
         {/* TRIPLE FEATURE SECTION ROW */}
-        <FeaturesRow />
+        <FeaturesRow 
+          leftTitle={data.mdx.frontmatter.leftTitle}
+          leftPar={data.mdx.frontmatter.leftPar}
+          middleTitle={data.mdx.frontmatter.middleTitle}
+          middlePar={data.mdx.frontmatter.middlePar}
+          rightTitle={data.mdx.frontmatter.rightTitle}
+          rightPar={data.mdx.frontmatter.rightPar}
+          leftImage={getImage(data.leftImage)}
+          middleImage={getImage(data.middleImage)}
+          rightImage={getImage(data.rightImage)}
+        />
 
         {/* TESTIMONIALS */}
 
@@ -83,8 +92,41 @@ query {
   maintenance: file(relativePath: {eq: "maintenance.png"}) {
     ...imageData
   }
+  leftImage: file(relativePath: {eq: "reporting.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+  middleImage: file(relativePath: {eq: "tracking.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+  rightImage: file(relativePath: {eq: "booking-management.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+  mdx(frontmatter: {name: {eq: "home"}}) {
+    frontmatter {
+      heroTitle
+      heroSubtitle
+      firstFeatureTitle
+      firstFeaturePar
+      secondFeatureTitle
+      secondFeaturePar
+      leftTitle
+      leftPar
+      middleTitle
+      middlePar
+      rightTitle
+      rightPar
+    }
+  }
 }
-
 `
 
 export default IndexPage

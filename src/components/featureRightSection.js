@@ -4,14 +4,14 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import { section, featureLink, row } from './featureRightSection.module.css'
+import { section, container, title, subtitle, text, featureLink, row } from './featureRightSection.module.css'
 
 
 const FeatureRightSection = (props) => {
 
     const createLink = () => {
         if (props.link) {
-            return <Link to={props.link} className={featureLink}>View features<i className="fa-solid fa-arrow-right"></i></Link>
+            return <Link to={props.link} className={featureLink}>View features <i className="fa-solid fa-arrow-right"></i></Link>
         } else {
             return ''
         }
@@ -19,7 +19,7 @@ const FeatureRightSection = (props) => {
 
     return (
         <div className={section}>
-            <Container>
+            <Container fluid className={container}>
                 <Row className={row}>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className="text-center">
                         <GatsbyImage
@@ -27,12 +27,10 @@ const FeatureRightSection = (props) => {
                             alt="graphic"
                         />
                     </Col>
-                    <Col xs={12} sm={12} md={6} lg={6} xl={6} >
-                        <div>
-                            <h1>{props.title}</h1>
-                            <p>{props.subtitle}</p>
-                            {createLink()}
-                        </div>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6} className={text}>
+                        <h3 className={title}>{props.title}</h3>
+                        <p className={subtitle}>{props.subtitle}</p>
+                        {createLink()}
 
                     </Col>
 

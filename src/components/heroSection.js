@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import SecondaryButton from '../styles/styled-component/SecondaryButton'
 import PrimaryButtonOutline from '../styles/styled-component/PrimaryButtonOutline'
-import { container, imageCol, row, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
+import { container, row, paragraph, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 
 const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
 
@@ -14,12 +14,6 @@ const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
         fontSize: '50px',
         fontFamily: 'Helvetica Neue',
         fontWeight: '700'
-    }
-
-    const paragraphStyle = {
-        fontSize: '18px',
-        fontFamily: 'poppins',
-        fontWeight: '300'
     }
 
     return (
@@ -32,7 +26,7 @@ const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
                     <Row className={row}>
                         <Col sm={12} md={5} className={heroText}>
                                 <h1 style={titleStyle}>{title}</h1>
-                                <p style={paragraphStyle}>{subtitle}</p>
+                                <p className={paragraph}>{subtitle}</p>
                                 <SecondaryButton size="lg" className={contactButton}>
                                     <Link to="/contact">Request a demo</Link>
                                 </SecondaryButton>
