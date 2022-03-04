@@ -74,7 +74,7 @@ query {
   hero: file(relativePath: {eq: "homepage.png"}) {
     id
     childImageSharp {
-      gatsbyImageData(height: 600)
+      gatsbyImageData
     }
   }
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {

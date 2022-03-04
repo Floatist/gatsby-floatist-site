@@ -21,7 +21,7 @@ const BlogPage = ({ data }) => {
                             <Col sm={6} md={3}>
                                 
                                 <article key={node.id}>
-                                <Link to={`/blog/${node.slug}`}>
+                                <Link to={`/blog/${node.frontmatter.slug}`}>
                                     <GatsbyImage 
                                         image={getImage(node.frontmatter.hero_image.childImageSharp)}
                                         className={image}
@@ -31,7 +31,6 @@ const BlogPage = ({ data }) => {
                                         {node.frontmatter.title}
                                     </h5>
                                     </Link>
-                                    {/* <p className={date}>{node.frontmatter.date}</p> */}
                                     <p className={abstract}>{node.frontmatter.abstract}</p>
                                 </article>
                                 
