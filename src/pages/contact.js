@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Col, Row, Container } from 'react-bootstrap'
 import ContactForm from '../components/contactForm'
 import Layout from '../components/layout'
-import { section, text, form, beigeShape, sandShape } from './contact.module.css'
+import { section, text, beigeShape, sandShape, container } from './contact.module.css'
 
 const ContactPage = () => {
 
@@ -14,10 +14,11 @@ const ContactPage = () => {
 
     return (
         <Layout pageTitle="Contact us">
-            <Container className={section}>
+            <Container fluid className={container}>
                 <div className={beigeShape}></div>
                 <div className={sandShape}></div>
-
+            <Container className={section}>
+            
                 <Row>
                     <Col md={6}>
                         <Container fluid className={text}>
@@ -38,10 +39,13 @@ const ContactPage = () => {
                     </Col>
 
                     <Col md={6}>
-                        <ContactForm className={form} />
+                        <ContactForm />
                     </Col>
                 </Row>
             </Container>
+
+            </Container>
+            
         </Layout>
     )
 }

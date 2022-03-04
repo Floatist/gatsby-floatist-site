@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { Container } from 'react-bootstrap'
 import SecondaryButton from '../styles/styled-component/SecondaryButton'
-import { section, activationTitle, activationButton, blueOval } from './activation.module.css'
+import { section, activationTitle, activationButton, whiteOval } from './activation.module.css'
 
 const Activation = () => {
 
@@ -16,7 +16,7 @@ const Activation = () => {
         <>
         
         <div className={section}>
-        <div className={blueOval}></div>
+        <div className={whiteOval}></div>
             <Container>
                 <h1 className={activationTitle} style={titleStyle}>Ready to simplify your operation?</h1>
                 <SecondaryButton className={activationButton}>
