@@ -20,6 +20,11 @@
     position: absolute;
 }
 
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
 /* MEDIUM AND LARGE SCREENS */
 @media screen and (min-width: 400px) {
     .section {

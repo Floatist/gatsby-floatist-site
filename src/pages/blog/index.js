@@ -28,9 +28,7 @@ const BlogPage = ({ data }) => {
                                     />
                                     <p className={category}>{node.frontmatter.category}</p>
                                     <h5 className={title}>
-                                        <Link to={`/blog/${node.slug}`}>
-                                            {node.frontmatter.title}
-                                        </Link>
+                                        {node.frontmatter.title}
                                     </h5>
                                     </Link>
                                     {/* <p className={date}>{node.frontmatter.date}</p> */}
@@ -64,9 +62,9 @@ query {
             }
           }
           category
+          slug
         }
         id
-        slug
       }
     }
   }

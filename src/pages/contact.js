@@ -17,8 +17,8 @@ const ContactPage = () => {
             <Container fluid className={container}>
                 <div className={beigeShape}></div>
                 <div className={sandShape}></div>
-            <Container className={section}>
-            
+
+            <Container fluid className={section}>
                 <Row>
                     <Col md={6}>
                         <Container fluid className={text}>
@@ -42,10 +42,11 @@ const ContactPage = () => {
                         <ContactForm />
                     </Col>
                 </Row>
-            </Container>
 
             </Container>
-            
+            </Container>
+
+            {/* <Activation/> */}
         </Layout>
     )
 }

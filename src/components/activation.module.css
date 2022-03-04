@@ -6,13 +6,16 @@
 }
 
 .activation-title {
-    padding: 120px 0 0 0;
+    padding: 120px 0 50px 0;
+    margin-bottom: auto;
+    z-index: 0;
 }
 
 .activation-button {
     margin: 30px 0 40px 0;
     letter-spacing: 1px;
     padding: 12px;
+    text-transform: uppercase;
 }
 
 .white-oval {
@@ -24,4 +27,5 @@
     left: calc(-100vw/8);
     border-radius: 50% / 0 0 100% 100%;
     overflow: hidden;
+    /* z-index: -1; */
 }

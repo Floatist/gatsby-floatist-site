@@ -8,13 +8,18 @@ import FeatureLeftSection from "../components/featureLeftSection"
 import HeroSection from "../components/heroSection"
 import Activation from "../components/activation"
 import FeaturesRow from "../components/featuresRow"
-import { container } from './index.module.css'
+import { container, beigeShape, sandShape, rockShape } from './index.module.css'
 
 const IndexPage = ({ data }) => {
 
   return (
-    // Container needed outside to cute off al the css shapes used that fall outside page
+    // Container needed outside to cute off al the css shapes used that fall outside page      
     <Container fluid className={container}>
+
+      <div className={beigeShape}></div>
+      <div className={rockShape}></div>
+      {/* Decoration right */}
+
       <Layout pageTitle="The only tool you need">
         <HeroSection
           title="The only tool you need to manage your fleet"
@@ -43,13 +48,15 @@ const IndexPage = ({ data }) => {
         {/* TESTIMONIALS */}
 
         {/* ACTIVATION */}
-        <Activation />
+        <Activation
+          title="Ready to simplify your operation?"
+          buttonText="Request a demo"
+        />
 
         {/* NEWSLETTER */}
 
       </Layout>
     </Container>
-
   )
 }
 
@@ -64,8 +71,11 @@ export const imageData = graphql`
 
 export const query = graphql`
 query {
-  hero: file(relativePath: {eq: "laptop-and-phone.png"}) {
-    ...imageData
+  hero: file(relativePath: {eq: "homepage.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData(height: 600)
+    }
   }
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
     ...imageData

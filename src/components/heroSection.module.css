@@ -21,8 +21,13 @@ holds two completely overlapping divs (.bg and .hero-section) */
 .hero-section {
     top: 0;
     left: 0;
-    max-width: 950px;
+    max-width: 1100px;
     margin: 0 auto 0 auto;
+}
+
+.row {
+    align-items: center;
+
 }
 
 @media screen and (min-width: 769px) {
@@ -37,14 +42,10 @@ holds two completely overlapping divs (.bg and .hero-section) */
         background-image: url('/images/hero-background.jpg');
     }
 
-    /* Same as bg height. For now set hardcoded but can improve this by getting  */
-    .hero-section {
-        height: 768px; 
-    }
-
     /* Medium and bigger screens */
     .hero-text {
-        margin: 220px 0 220px 0;
+        margin: 20px 0 220px 0;
+        padding: 140px 0 40px 50px;
     }
 }
 
@@ -58,13 +59,9 @@ holds two completely overlapping divs (.bg and .hero-section) */
         background-color: #0097BE;
     }
 
-    .hero-section {
-        height: calc(100vh);
-        margin-top: 10%;
-    }
-
     .hero-text {
         margin: 120px 0 20px 0;
+        padding: 40px 50px 40px 50px;
     }
 }
 
@@ -79,11 +76,6 @@ holds two completely overlapping divs (.bg and .hero-section) */
         opacity: 25%;
     }
 
-    .hero-section {
-        height: calc(100vh);
-        margin-top: 10%;
-    }
-
     .hero-text {
         margin: 120px 10px 20px 10px;
     }
@@ -92,16 +84,16 @@ holds two completely overlapping divs (.bg and .hero-section) */
 .contact-button {
     margin-right: 20px;
     margin-top: 20px;
-    font-size: 0.9rem;
-    width: 200px;
+    font-size: 0.8rem;
+    width: 160px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .learn-button {
     margin-top: 20px;
-    font-size: 0.9rem;
-    width: 200px;
+    font-size: 0.8rem;
+    width: 160px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }

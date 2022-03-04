@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import SecondaryButton from '../styles/styled-component/SecondaryButton'
 import PrimaryButtonOutline from '../styles/styled-component/PrimaryButtonOutline'
-import { container, bg, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
+import { container, imageCol, row, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 
 const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
 
@@ -24,14 +24,13 @@ const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
 
     return (
         <div className={container}>
-            <div className={bg} style={{ backgroundImage: `url(${backgroundUrl})`}}>
+            {/* <div className={bg} style={{ backgroundImage: `url(${backgroundUrl})`}}>
                 Floatist
-            </div>
-            <div className={heroSection}>
-                <Container className={container}>
-                    <Row className="align-items-center">
-                        <Col xs={12} sm={12} md={7} lg={7} xl={6} mt={6} className="my-auto">
-                            <div className={heroText} >
+            </div> */}
+            <div>
+                <Container fluid className={heroSection}>
+                    <Row className={row}>
+                        <Col sm={12} md={5} className={heroText}>
                                 <h1 style={titleStyle}>{title}</h1>
                                 <p style={paragraphStyle}>{subtitle}</p>
                                 <SecondaryButton size="lg" className={contactButton}>
@@ -41,11 +40,9 @@ const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
                                     <Link to="/product" >Learn more</Link>
                                 </PrimaryButtonOutline>
                                 
-                            </div>
                         </Col>
-                        <Col xs={12} sm={12} md={5} lg={5} xl={5} className="my-auto">
-                            <GatsbyImage image={image} alt="graphic"/>
-
+                        <Col sm={12} md={7}>
+                            <GatsbyImage image={image} alt="graphic" height={500}/>
                         </Col>
                     </Row>
                 </Container>
