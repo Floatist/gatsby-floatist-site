@@ -68,10 +68,9 @@ const Navigation = () => {
                         <Nav.Item as="li" className={navItem}>
                             <Link to="/about" className="nav-link" activeClassName="active">About</Link>
                         </Nav.Item >
-                        <Nav.Item as="li" className={navItem}>
+                        {/* <Nav.Item as="li" className={navItem}>
                             <Link to="/blog" className="nav-link" activeClassName="active">Blog</Link>
-                        </Nav.Item>
-
+                        </Nav.Item> */}
                     </Nav>
                     {/* Align this one to the right */}
                     <Nav as="ul" className="ms-auto">
