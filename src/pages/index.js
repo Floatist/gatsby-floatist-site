@@ -80,7 +80,7 @@ export const imageData = graphql`
 
 export const query = graphql`
 query {
-  hero: file(relativePath: {eq: "homepage.png"}) {
+  hero: file(relativePath: {eq: "app-two-screens.png"}) {
     id
     childImageSharp {
       gatsbyImageData
