@@ -17,7 +17,7 @@ const ProductPage = ({ data }) => {
       <HeroSection
         title="Handle all your processes from one tool"
         subtitle="No need for duplicate administrative tasks from a multitude of tools. We've got your back."
-        image={getImage(data.hero)}
+        backgroundUrl="'/images/fok.jpg'"
       />
 
       <FeatureRightSection

@@ -1,12 +1,13 @@
 .container {
-    /* So it doesnt scroll horizontally bc of css circle shapes */
-    /* overflow: hidden; */
     position: relative;
+    overflow: hidden;
 }
+
 
 .hero-section {
     top: 0;
     left: 0;
+    height: 100%; /* has to be the same height as bg */
     max-width: 1100px;
     margin: 120px auto 120px auto;
 }
@@ -46,4 +47,39 @@
     letter-spacing: 0.8px;
     border-width: 2px;
     padding: 10px;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 35%;
+    z-index: -1;
+}
+
+@media screen and (min-width: 850px) {
+    .bg {
+        left: calc(100vw / 1.5);
+        width: calc(100vw / 2);
+    }
+}
+
+/* Small screens: content underneath each other */
+@media screen and (min-width:576px) and (max-width: 850px) {
+    .bg {
+        left: calc(100vw / 1.2);
+        width: calc(100vw / 1.2);
+    }
+}
+
+/* XS screens padding on right side. Make more see through*/
+@media screen and (max-width: 575px) {
+    .bg {
+        left: calc(100vw / 1.2);
+        width: calc(100vw / 1.2);
+        opacity: 25%;
+    }
 }

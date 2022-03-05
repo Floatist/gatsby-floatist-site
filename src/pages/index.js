@@ -24,7 +24,6 @@ const IndexPage = ({ data }) => {
           title={data.mdx.frontmatter.heroTitle}
           subtitle={data.mdx.frontmatter.heroSubtitle}
           image={getImage(data.hero)}
-          backgroundUrl="/images/ropes.jpg"
         />
 
         <FeatureRightSection
@@ -95,19 +94,19 @@ query {
   leftImage: file(relativePath: {eq: "reporting.png"}) {
     id
     childImageSharp {
-      gatsbyImageData
+      gatsbyImageData(width: 400)
     }
   }
   middleImage: file(relativePath: {eq: "tracking.png"}) {
     id
     childImageSharp {
-      gatsbyImageData
+      gatsbyImageData(width: 400)
     }
   }
   rightImage: file(relativePath: {eq: "booking-management.png"}) {
     id
     childImageSharp {
-      gatsbyImageData
+      gatsbyImageData(width: 400)
     }
   }
   mdx(frontmatter: {name: {eq: "home"}}) {

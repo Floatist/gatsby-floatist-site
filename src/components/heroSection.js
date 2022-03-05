@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import SecondaryButton from '../styles/styled-component/SecondaryButton'
 import PrimaryButtonOutline from '../styles/styled-component/PrimaryButtonOutline'
-import { row, paragraph, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
+import { container, bg, row, paragraph, contactButton, learnButton, heroText, heroSection } from './heroSection.module.css'
 
 const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
 
@@ -17,24 +17,29 @@ const HeroSection = ({ title, subtitle, image, backgroundUrl }) => {
     }
 
     return (
-        <Container fluid className={heroSection}>
-            <Row className={row}>
-                <Col sm={12} md={6} lg={5} className={heroText}>
-                    <h1 style={titleStyle}>{title}</h1>
-                    <p className={paragraph}>{subtitle}</p>
-                    <SecondaryButton size="lg" className={contactButton}>
-                        <Link to="/contact">Request a demo</Link>
-                    </SecondaryButton>
-                    <PrimaryButtonOutline size="lg" className={learnButton}>
-                        <Link to="/product" >Learn more</Link>
-                    </PrimaryButtonOutline>
+        <div className={container}>
+            <div className={bg} style={{ backgroundImage: `url(${backgroundUrl})` }}>
+            </div>
+            <Container fluid className={heroSection}>
+                <Row className={row}>
+                    <Col sm={12} md={6} lg={5} className={heroText}>
+                        <h1 style={titleStyle}>{title}</h1>
+                        <p className={paragraph}>{subtitle}</p>
+                        <SecondaryButton size="lg" className={contactButton}>
+                            <Link to="/contact">Request a demo</Link>
+                        </SecondaryButton>
+                        <PrimaryButtonOutline size="lg" className={learnButton}>
+                            <Link to="/product" >Learn more</Link>
+                        </PrimaryButtonOutline>
 
-                </Col>
-                <Col sm={12} md={6} lg={7}>
-                    <GatsbyImage image={image} alt="graphic" height={500} />
-                </Col>
-            </Row>
-        </Container>
+                    </Col>
+                    <Col sm={12} md={6} lg={7}>
+                        <GatsbyImage image={image} alt="graphic" height={500} />
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+
     )
 }
 
