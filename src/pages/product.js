@@ -38,10 +38,10 @@ const ProductPage = ({ data }) => {
       {/* TWO ROWS COMPONENT: Platform + mobile check in*/}
       <TwoFeatures 
         topFeatureTitle="Floatist provides the complete fleet management solution that’s easy to use and scales with your business."
-        topFeatureSubtitle="Empower your customers to self check in, handle paperwork through the app, and streamline your maintenance tasks between charters."
+        topFeatureSubtitle="Empower your customers to self check-in, handle paperwork through the app, and streamline your maintenance tasks between charters."
         topFeatureImage={getImage(data.connectedPlatform)}
         bottomFeatureTitle="Offer self check-in to your customers"
-        bottomFeatureSubtitle="Customers can complete check in at their own pace – while your staff have their hands free to assist where needed."
+        bottomFeatureSubtitle="Customers can complete check-in at their own pace – while your staff have their hands free to assist where needed."
         bottomFeatureImage={getImage(data.mobileCheckin)}
         backgroundColor="#F4F3F0"
       />
@@ -52,7 +52,7 @@ const ProductPage = ({ data }) => {
         topFeatureSubtitle="Make it easier to track, prioritize, assign and respond to issues with one unified workspace, from the browser to the mobile app."
         topFeatureImage={getImage(data.maintenance)}
         bottomFeatureTitle="Report back to stakeholders with ease"
-        bottomFeatureSubtitle="Save yourself from end-of-quarter admin by enabling yacht owners to access their yacht's log."
+        bottomFeatureSubtitle="Save yourself from end-of-quarter admin by enabling yacht owners to access their yacht's log in real-time."
         bottomFeatureImage={getImage(data.reporting)}
         backgroundColor="white"
       />
@@ -95,10 +95,16 @@ query {
     ...imageData
   }
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
-    ...imageData
+    id
+    childImageSharp {
+      gatsbyImageData(height: 350)
+    }
   }
   reporting: file(relativePath: {eq: "reporting-graphic.png"}) {
-      ...imageData
+    id
+    childImageSharp {
+      gatsbyImageData(height: 350)
+    }
   }
   maintenance: file(relativePath: {eq: "maintenance.png"}) {
       ...imageData

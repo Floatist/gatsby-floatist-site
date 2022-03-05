@@ -84,10 +84,16 @@ query {
     }
   }
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
-    ...imageData
+    id
+    childImageSharp {
+      gatsbyImageData(height: 350)
+    }
   }
   maintenance: file(relativePath: {eq: "maintenance.png"}) {
-    ...imageData
+    id
+    childImageSharp {
+      gatsbyImageData(height: 300)
+    }
   }
   leftImage: file(relativePath: {eq: "reporting.png"}) {
     id

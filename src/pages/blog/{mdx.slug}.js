@@ -43,7 +43,7 @@ const BlogPost = ({ data }) => {
 
       {/* BODY */}
       <Container fluid className={body}>
-        <p><i class="fa-regular fa-clock"></i> {data.mdx.timeToRead} min read</p>
+        <p><i className="fa-regular fa-clock"></i> {data.mdx.timeToRead} min read</p>
         <hr style={hrStyle} />
         <MDXRenderer>
           {data.mdx.body}

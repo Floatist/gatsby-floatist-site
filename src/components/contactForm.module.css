@@ -9,10 +9,38 @@
 
 .section {
     max-width: 550px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .form {
-    padding: 35px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 35px 20px 35px 20px;
+}
+
+.confirmation {
+    min-height: 220px;
+    padding: 35px 20px 35px 20px;
+    text-align: center;
+}
+
+.submission-title {
+    padding: 20px 0 0 0;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 700;
+}
+.submission-paragraph {
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.xmark {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.xmark:hover {
+    cursor: pointer;
+    color: black;
 }

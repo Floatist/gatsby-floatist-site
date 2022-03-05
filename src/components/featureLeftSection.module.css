@@ -28,6 +28,7 @@
 .feature-link {
     text-decoration: underline;
     color: #0097BE;
+    margin-bottom: 50px;
 }
 
 .feature-link:hover {

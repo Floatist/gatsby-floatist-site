@@ -27,13 +27,13 @@ const ContactPage = () => {
                             <p>We're happy to show you how Floatist can help your business.</p>
                             <ul className="list-unstyled">
                                 <li>
-                                    <i class="fa-solid fa-check"></i> Learn how to save costs and increase productivity
+                                    <i className="fa-solid fa-check"></i> Learn how to save costs and increase productivity
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-check"></i> Get pricing information
+                                    <i className="fa-solid fa-check"></i> Get pricing information
                                 </li>
                                 <li>
-                                    <i class="fa-solid fa-check"></i> Explore use cases for your business
+                                    <i className="fa-solid fa-check"></i> Explore use cases for your business
                                 </li>
                             </ul>
                         </Container>
