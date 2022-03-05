@@ -12,7 +12,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -23,6 +23,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^4.7.2",
     "gatsby-plugin-image": "^2.7.0",
+    "gatsby-plugin-manifest": "^4.9.0",
     "gatsby-plugin-mdx": "^2.0.0",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-styled-components": "^5.8.0",

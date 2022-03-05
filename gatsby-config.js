@@ -32,6 +32,12 @@ module.exports = {
       "gatsby-remark-images", // For responsive images within mdx content
       "gatsby-remark-autolink-headers", // To automatically create links in mdx content
       "gatsby-plugin-styled-components",
-      "@mediacurrent/gatsby-plugin-silence-css-order-warning" // to silence css order warnings because they don't actually produce problems
+      "@mediacurrent/gatsby-plugin-silence-css-order-warning", // to silence css order warnings because they don't actually produce problems
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          icon: 'src/images/favicon.ico',
+        }
+      }
     ]
 }

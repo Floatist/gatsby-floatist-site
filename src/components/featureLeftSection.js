@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
-import { section, text, title, subtitle, featureLink, container, row } from './featureLeftSection.module.css'
+import { text, title, subtitle, featureLink, container, row } from './featureLeftSection.module.css'
 
 
 const FeatureLeftSection = (props) => {
@@ -16,7 +16,7 @@ const FeatureLeftSection = (props) => {
     }
 
     return (
-        <div className={section}>
+        <div>
             <Container fluid className={container}>
                 <Row className={row}>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className={text}>

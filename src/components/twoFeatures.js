@@ -1,13 +1,13 @@
 import * as React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
-import { section, container, title, subtitle, text, row } from './twoFeatures.module.css'
+import { container, title, subtitle, text, row } from './twoFeatures.module.css'
 
 
 const TwoFeatures = (props) => {
 
     return (
-        <div className={section} style={{ backgroundColor: props.backgroundColor }}>
+        <div style={{ backgroundColor: props.backgroundColor }}>
             <Container fluid className={container}>
                 <Row className={row}>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className={text}>
