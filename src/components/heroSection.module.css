@@ -13,7 +13,7 @@
 }
 
 .hero-text{
-    padding: 0 30px 30px 30px;
+    padding: 0 10px 30px 30px;
     margin: 0 auto 0 auto;
 }
 
@@ -55,31 +55,22 @@
     height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 35%;
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
     z-index: -1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 550px) {
     .bg {
-        left: calc(100vw / 1.5);
+        left: calc(100vw / 1.8);
         width: calc(100vw / 2);
     }
 }
 
 /* Small screens: content underneath each other */
-@media screen and (min-width:576px) and (max-width: 850px) {
+@media screen and (max-width: 550px) {
     .bg {
         left: calc(100vw / 1.2);
         width: calc(100vw / 1.2);
-    }
-}
-
-/* XS screens padding on right side. Make more see through*/
-@media screen and (max-width: 575px) {
-    .bg {
-        left: calc(100vw / 1.2);
-        width: calc(100vw / 1.2);
-        opacity: 25%;
     }
 }

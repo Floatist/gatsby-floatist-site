@@ -1,61 +1,70 @@
 import * as React from 'react'
+import Container from 'react-bootstrap/Container'
 import { graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import FeatureRightSection from '../components/featureRightSection'
-import FeatureLeftSection from '../components/featureLeftSection'
 import HeroSection from '../components/heroSection'
 import Activation from '../components/activation'
+import TwoFeatures from '../components/twoFeatures'
+import { container, div } from './product.module.css'
+
 
 const ProductPage = ({ data }) => {
 
   console.log(data)
 
   return (
+    <Container fluid className={container}>
     <Layout pageTitle="Product">
+      <div className={div}></div>
+
       {/* HERO SECTION*/}
       <HeroSection
-        title="Handle all your processes from one tool"
-        subtitle="No need for duplicate administrative tasks from a multitude of tools. We've got your back."
+        title="One platform for your team and your fleet"
+        subtitle="Floatist not only makes the charter experience better for your customers, but sets your team up for success, and keeps your business in sync. It is everything you need, in one powerful tool."
         backgroundUrl="'/images/fok.jpg'"
       />
 
+      {/* TWO SCREENS APP IMAGE + BOOKING MANAGEMENT*/}
       <FeatureRightSection
-        title="Booking management"
-        subtitle="Directly push your availability to leading aggregators such as Nausys, MMK and Yacht Sentinel. No need to duplicate you data input in several different providers."
-        image={getImage(data.booking)}
+        title="Floatist is the foundation built to help you create the best customer experiences"
+        subtitle="A tool that hits the sweet spot. Work smarter, boost staff efficiency, and set your team up for success."
+        image={getImage(data.apps)}
+        backgroundColor="white"
       />
 
-      <FeatureLeftSection
-        title="Mobile check-in / out"
-        subtitle="Let your customers familiarize themselves with the boat even before arrival, and allow them to check-in guided by our app. Say goodbye to the Saturday peaks."
-        image={getImage(data.mobileCheckin)}
-      />
 
-      <FeatureRightSection
-        title="Reporting"
-        subtitle="Run and download reports to share with any stakeholders. Provide a login to boat owners and empower them to keep track of their boats record."
-        image={getImage(data.reporting)}
+      {/* TWO ROWS COMPONENT: Platform + mobile check in*/}
+      <TwoFeatures 
+        topFeatureTitle="Floatist provides the complete fleet management solution that’s easy to use and scales with your business."
+        topFeatureSubtitle="Empower your customers to self check in, handle paperwork through the app, and streamline your maintenance tasks between charters."
+        topFeatureImage={getImage(data.connectedPlatform)}
+        bottomFeatureTitle="Offer self check-in to your customers"
+        bottomFeatureSubtitle="Customers can complete check in at their own pace – while your staff have their hands free to assist where needed."
+        bottomFeatureImage={getImage(data.mobileCheckin)}
+        backgroundColor="#F4F3F0"
       />
-
-      <FeatureLeftSection
-        title="Maintenance tracking"
-        subtitle="Keep track of all your maintenance tasks in our tool. Create tasks for one off and scheduled maintenance. Record repairs during checkout. Assign to team members and add photos and comments directly from the mobile app."
-        image={getImage(data.maintenance)}
-      />
-
-      <FeatureRightSection
-        title="Find and hire crew"
-        subtitle="Use our crew portal to invite captains and chefs for your charters. Choose from our extensive network of the highest rated certified crew. Finding, assigning and paying crew has never been easier."
-        image={getImage(data.reporting)}
+      
+      {/* TWO ROWS COMPONENT:  Maintenance + Reporting */}
+      <TwoFeatures 
+        topFeatureTitle="Manage issues from one unified place"
+        topFeatureSubtitle="Make it easier to track, prioritize, assign and respond to issues with one unified workspace, from the browser to the mobile app."
+        topFeatureImage={getImage(data.maintenance)}
+        bottomFeatureTitle="Report back to stakeholders with ease"
+        bottomFeatureSubtitle="Save yourself from end-of-quarter admin by enabling yacht owners to access their yacht's log."
+        bottomFeatureImage={getImage(data.reporting)}
+        backgroundColor="white"
       />
 
       <Activation
-        title="Ready to simplify your operation?"
+        title="Take the lead"
         buttonText="Request a demo"
       />
 
     </Layout>
+    </Container>
+
   )
 }
 
@@ -70,7 +79,13 @@ export const imageData = graphql`
 
 export const query = graphql`
 query {
-  hero: file(relativePath: {eq: "homepage.png"}) {
+  apps: file(relativePath: {eq: "app-two-screens.png"}) {
+    id
+    childImageSharp {
+      gatsbyImageData
+    }
+  }
+  connectedPlatform: file(relativePath: {eq: "connected-platform.png"}) {
     id
     childImageSharp {
       gatsbyImageData
@@ -82,7 +97,7 @@ query {
   mobileCheckin: file(relativePath: {eq: "mobile-checkin.png"}) {
     ...imageData
   }
-  reporting: file(relativePath: {eq: "reporting.png"}) {
+  reporting: file(relativePath: {eq: "reporting-graphic.png"}) {
       ...imageData
   }
   maintenance: file(relativePath: {eq: "maintenance.png"}) {

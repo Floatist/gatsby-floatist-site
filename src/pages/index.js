@@ -15,10 +15,8 @@ const IndexPage = ({ data }) => {
   return (
     // Container needed outside to cute off al the css shapes used that fall outside page      
     <Container fluid className={container}>
-
       <div className={beigeShape}></div>
       <div className={rockShape}></div>
-
       <Layout pageTitle="The only tool you need">
         <HeroSection
           title={data.mdx.frontmatter.heroTitle}
@@ -57,7 +55,7 @@ const IndexPage = ({ data }) => {
 
         {/* ACTIVATION */}
         <Activation
-          title="Ready to simplify your operation?"
+          title={data.mdx.frontmatter.activationTitle}
           buttonText="Request a demo"
         />
 
@@ -94,19 +92,19 @@ query {
   leftImage: file(relativePath: {eq: "reporting.png"}) {
     id
     childImageSharp {
-      gatsbyImageData(width: 400)
+      gatsbyImageData(height: 200)
     }
   }
-  middleImage: file(relativePath: {eq: "tracking.png"}) {
+  middleImage: file(relativePath: {eq: "crew-simple.png"}) {
     id
     childImageSharp {
-      gatsbyImageData(width: 400)
+      gatsbyImageData(height: 200)
     }
   }
   rightImage: file(relativePath: {eq: "booking-management.png"}) {
     id
     childImageSharp {
-      gatsbyImageData(width: 400)
+      gatsbyImageData(height: 200)
     }
   }
   mdx(frontmatter: {name: {eq: "home"}}) {
@@ -123,6 +121,7 @@ query {
       middlePar
       rightTitle
       rightPar
+      activationTitle
     }
   }
 }

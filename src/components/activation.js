@@ -30,9 +30,6 @@ const Activation = ({ title, buttonText }) => {
                 <div className={whiteOval}></div>
                 <Container>
                     <h1 className={activationTitle} style={titleStyle}>{title}</h1>
-                    {/* <SecondaryButton className={activationButton}>
-                        <Link to="/contact">{buttonText}</Link>
-                    </SecondaryButton> */}
                     {renderButton()}
                 </Container>
             </div>

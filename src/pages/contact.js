@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Col, Row, Container } from 'react-bootstrap'
 import ContactForm from '../components/contactForm'
+import Activation from '../components/activation'
 import Layout from '../components/layout'
 import { section, text, beigeShape, sandShape, container } from './contact.module.css'
 
@@ -46,7 +47,9 @@ const ContactPage = () => {
             </Container>
             </Container>
 
-            {/* <Activation/> */}
+            <Activation
+                title="You can do it, we can help"
+            />
         </Layout>
     )
 }

@@ -17,8 +17,16 @@ const FeatureRightSection = (props) => {
         }
     }
 
+    const renderSectionStyle = () => {
+        if (props.backgroundColor) {
+            return { backgroundColor: props.backgroundColor }
+        } else {
+            return { backgroundImage: "radial-gradient(ellipse farthest-corner at -20% 850%, #DDD1C5 0%, #F4F3F0 75%, #DDD1C5 75%)"}
+        }
+    }
+
     return (
-        <div className={section}>
+        <div className={section} style={renderSectionStyle()}>
             <Container fluid className={container}>
                 <Row className={row}>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className="text-center">
@@ -31,9 +39,7 @@ const FeatureRightSection = (props) => {
                         <h3 className={title}>{props.title}</h3>
                         <p className={subtitle}>{props.subtitle}</p>
                         {createLink()}
-
                     </Col>
-
                 </Row>
             </Container>
         </div>
