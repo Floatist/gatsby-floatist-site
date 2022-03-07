@@ -21,7 +21,7 @@ const AboutPage = ({ data }) => {
             <div className={beigeShape}></div>
             <Container fluid className={section}>
                 <h1 style={titleStyle}>{data.mdx.frontmatter.title}</h1>
-                <p className={paragraph}>{data.mdx.frontmatter.subtitle}</p>
+                <p className={paragraph} style={{ color: "grey" }}>{data.mdx.frontmatter.subtitle}</p>
             </Container>
             </Container>
         </Layout>
