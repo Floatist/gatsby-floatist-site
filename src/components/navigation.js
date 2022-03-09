@@ -76,9 +76,9 @@ const Navigation = () => {
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
                             <Stack direction="horizontal" gap={4}>
-                                <Link to="/contact" className={navLogin} activeClassName="active">Sign in</Link>
+                                <Link to="/contact" className={navLogin}>Sign in</Link>
                                 <SecondaryButton className={navButton}>
-                                    <Link to="/contact" activeClassName="active"><i className="fa-solid fa-envelope"></i> Contact us</Link>
+                                    <Link to="/contact"><i className="fa-solid fa-envelope"></i> Contact us</Link>
                                 </SecondaryButton>
                             </Stack>
 

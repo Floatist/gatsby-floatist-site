@@ -5,7 +5,7 @@ import { getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import FeatureRightSection from "../components/featureRightSection"
 import FeatureLeftSection from "../components/featureLeftSection"
-import HeroSection from "../components/heroSection"
+import HomeHero from "../components/homeHero"
 import Activation from "../components/activation"
 import FeaturesRow from "../components/featuresRow"
 import { container } from './index.module.css'
@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
     // Container needed outside to cute off al the css shapes used that fall outside page      
     <Container fluid className={container}>
       <Layout pageTitle="The only tool you need">
-        <HeroSection
+        <HomeHero
           title={data.mdx.frontmatter.heroTitle}
           subtitle={data.mdx.frontmatter.heroSubtitle}
           image={getImage(data.hero)}
