@@ -33,7 +33,6 @@ const ProductPage = ({ data }) => {
           backgroundColor="white"
         />
 
-
         {/* TWO ROWS COMPONENT: Platform + mobile check in*/}
         <TwoFeatures
           topFeatureTitle="Floatist provides the complete fleet management solution that’s easy to use and scales with your business."

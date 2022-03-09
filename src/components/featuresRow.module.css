@@ -6,7 +6,7 @@
 .container {
     max-width: 1100px;
     margin: 0 auto 0 auto;
-    padding: 120px 0 120px 0;
+    padding: 100px 0 100px 0;  /* use padding instead of margin because of color bg*/
 }
 
 .paragraph {
@@ -22,9 +22,30 @@
     text-align: left;
 }
 
-.column {
-    padding: 20px 10px 40px 10px;
-    padding-left: 40px;
+.col {
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 860px) and (max-width: 1270px) {
+    .row {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 860px) {
+    .row {
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .row {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .feature-title {

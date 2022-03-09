@@ -1,6 +1,6 @@
 .container {
     max-width: 1100px;
-    margin: 150px auto 150px auto;
+    margin: 50px auto 50px auto;
 }
 
 .row {
@@ -10,6 +10,12 @@
 
 .text {
     padding: 50px 50px 20px 50px;
+}
+
+/* Because the maintenance image is more horizontal than vertical */
+.image {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .title {

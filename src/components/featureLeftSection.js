@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
-import { text, title, subtitle, featureLink, container, row } from './featureLeftSection.module.css'
+import { text, title, subtitle, featureLink, container, row, image } from './featureLeftSection.module.css'
 
 
 const FeatureLeftSection = (props) => {
@@ -26,6 +26,7 @@ const FeatureLeftSection = (props) => {
                     </Col>
                     <Col xs={12} sm={12} md={6} lg={6} xl={6} className="text-center">
                         <GatsbyImage
+                            className={image}
                             image={props.image}
                             alt="graphic"
                         />
