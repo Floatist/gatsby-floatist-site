@@ -10,3 +10,27 @@ ROCK GREY #5A5B67
 FLOATIST BLUE #0097BE
 WOOD BEIGE #DDD1C5
 SAND BEIGE #F4F3F0
+
+
+
+Fontawesome:
+Calendar: 
+<i class="fa-solid fa-calendar-lines"></i>
+
+<i class="fa-solid fa-wrench"></i>
+<i class="fa-solid fa-file-certificate"></i>
+<i class="fa-solid fa-file-chart-column"></i>
+
+
+<i class="fa-solid fa-arrow-right"></i>
+
+
+
+video
+<i class="fa-brands fa-youtube"></i>
+
+info
+<i class="fa-duotone fa-info"></i>
+
+hands free
+<i class="fa-solid fa-business-time"></i>

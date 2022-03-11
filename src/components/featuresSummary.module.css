@@ -1,0 +1,89 @@
+.section {
+    background-color: #F4F3F0;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text {
+    max-width: 40%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .text {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text {
+        max-width: 100%;
+    }
+}
+
+.icon {
+    padding: 20px 20px 0 20px;
+}
+
+.paragraph {
+    padding: 20px 0 10px 0;
+    font-family: 'poppins';
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.rectangle {
+    min-height: 100px;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .2s ease-in-out;
+}
+
+.rectangle:hover {
+    transform: scale(1.07);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.square {
+    min-height: 296px;
+    min-width: 250px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .2s ease-in-out;
+}
+
+.square:hover {
+    transform: scale(1.07);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.feature-title {
+    padding: 5px 20px 10px 20px;
+    font-family: 'poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.arrow {
+    padding-bottom: 5px;
+    padding-right: 15px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.square-arrow {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.col {
+    margin-top: 20px;
+}

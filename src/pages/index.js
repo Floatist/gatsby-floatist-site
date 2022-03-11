@@ -93,19 +93,19 @@ query {
       gatsbyImageData(height: 300)
     }
   }
-  leftImage: file(relativePath: {eq: "reporting.png"}) {
+  leftImage: file(relativePath: {eq: "black-reporting.png"}) {
     id
     childImageSharp {
       gatsbyImageData(height: 200)
     }
   }
-  middleImage: file(relativePath: {eq: "crew-simple.png"}) {
+  middleImage: file(relativePath: {eq: "black-paperwork.png"}) {
     id
     childImageSharp {
       gatsbyImageData(height: 200)
     }
   }
-  rightImage: file(relativePath: {eq: "booking-management.png"}) {
+  rightImage: file(relativePath: {eq: "black-booking.png"}) {
     id
     childImageSharp {
       gatsbyImageData(height: 200)
