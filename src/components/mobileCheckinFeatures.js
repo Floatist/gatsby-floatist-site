@@ -14,7 +14,7 @@ const MobileCheckinFeatures = () => {
             <Row className="align-items-center">
                 <Col md={5} className={heading}>
                     <h1>
-                        <span style={{ color: "#0097BE" }}>Empower your customers to self check-in / out,</span> and familiarise themselves even before arrival.
+                        <span style={{ color: "#0097BE" }}>Empower your customers to self check-in / out,</span> and familiarize themselves even before arrival.
                     </h1>
                 </Col>
                 <Col md={7} className={image}>
@@ -44,7 +44,7 @@ const MobileCheckinFeatures = () => {
                             Custom push notifications
                         </h5>
                         <p>
-                            Notify customers of important events while they sit back and enjoy the first they of their vacation.
+                            Notify customers of important events while they sit back and enjoy the first day of their vacation.
                         </p>
 
                     </div>
