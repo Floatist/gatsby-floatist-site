@@ -2,19 +2,16 @@ import * as React from 'react'
 import Container from 'react-bootstrap/Container'
 import { graphql } from 'gatsby'
 import { getImage } from 'gatsby-plugin-image'
-import { Video } from 'gatsby-video'
-import Col from 'react-bootstrap/Col'
 import Layout from '../components/layout'
 import FeatureRightSection from '../components/featureRightSection'
 import ProductHero from '../components/productHero'
 import Activation from '../components/activation'
-import TwoFeatures from '../components/twoFeatures'
 import { container } from './product.module.css'
-import { Row } from 'react-bootstrap'
 import FeaturesSummary from '../components/featuresSummary'
 import MobileCheckinFeatures from '../components/mobileCheckinFeatures'
 import MaintenanceFeatures from '../components/maintenanceFeatures'
 import PaperworkFeatures from '../components/paperworkFeatures'
+import BookingFeatures from '../components/bookingFeatures'
 
 
 const ProductPage = ({ data }) => {
@@ -45,9 +42,10 @@ const ProductPage = ({ data }) => {
 
         {/* NEW SECTION WITH OVERVIEW FEATURES */}
         <FeaturesSummary />
-        <MobileCheckinFeatures />
-        <MaintenanceFeatures />
-        <PaperworkFeatures />
+        <MobileCheckinFeatures id="mobile"/>
+        <MaintenanceFeatures id="maintenance" />
+        <PaperworkFeatures id="paperwork" />
+        <BookingFeatures id="booking"/>
         
         {/* ACTIVATION */}
         <Activation

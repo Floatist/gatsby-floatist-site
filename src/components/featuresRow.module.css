@@ -50,8 +50,9 @@
 
 .feature-title {
     padding: 20px 0 20px 0;
-    font-family: 'Helvetica Neue';
+    font-family: 'Poppins';
     font-weight: 600;
+    font-size: 1.4rem;
 }
 
 .feature-link {

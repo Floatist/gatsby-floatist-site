@@ -2,14 +2,13 @@ import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Stack from 'react-bootstrap/Stack'
 import { Container } from 'react-bootstrap'
 import { section, heading, headingRow, listHeading, listItem, list, featuresRow, featureText, featureCol } from './paperworkFeatures.module.css'
 
 const PaperworkFeatures = () => {
 
     return (
-        <Container className={section}>
+        <Container className={section} id="paperwork">
 
             {/* Header */}
             <Row className={headingRow}>

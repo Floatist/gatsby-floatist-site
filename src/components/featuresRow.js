@@ -14,38 +14,41 @@ const FeaturesRow = ({ leftTitle, leftPar, middleTitle, middlePar, rightTitle, r
                 <Row className={row}>
                     <Col md={4} className={col}>
                         <StaticImage
-                            src="../images/reporting.png"
-                            className="img-fluid"
+                            src="../images/reporting-blue.png"
+                            className="img-fluid mr-auto"
                             alt="icon"
                             width={100}
+                            imgStyle={{ objectFit: "contain" }}
                         />
                         <h3 className={featureTitle}>{leftTitle}</h3>
                         <p className={paragraph}>{leftPar}</p>
-                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <Link to="/product#reporting" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                     <Col md={4} className={col}>
                         <StaticImage
-                            src="../images/booking.png"
-                            className="img-fluid"
+                            src="../images/legaldocs-blue.png"
+                            className="img-fluid mr-auto"
                             alt="icon"
                             width={100}
+                            imgStyle={{ objectFit: "contain" }}
                         />
                         <h3 className={featureTitle}>{middleTitle}</h3>
                         <p className={paragraph}>{middlePar}</p>
-                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <Link to="/product#paperwork" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                     <Col md={4} className={col}>
                         <StaticImage
-                            src="../images/booking2.png"
-                            className="img-fluid"
+                            src="../images/booking-blue.png"
+                            className="img-fluid mr-auto"
                             alt="icon"
                             width={100}
+                            imgStyle={{ objectFit: "contain" }}
                         />
                         <h3 className={featureTitle}>{rightTitle}</h3>
                         <p className={paragraph}>{rightPar}</p>
-                        <Link to="/product" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <Link to="/product#booking" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
 
                     </Col>
                 </Row>

@@ -25,14 +25,14 @@ const IndexPage = ({ data }) => {
         <FeatureRightSection
           title={data.mdx.frontmatter.firstFeatureTitle}
           subtitle={data.mdx.frontmatter.firstFeaturePar}
-          link="/product"
+          link="/product#mobile"
           image={getImage(data.mobileCheckin)}
         />
 
         <FeatureLeftSection
           title={data.mdx.frontmatter.secondFeatureTitle}
           subtitle={data.mdx.frontmatter.secondFeaturePar}
-          link="/product"
+          link="/product#maintenance"
           image={getImage(data.maintenance)}
         />
 

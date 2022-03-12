@@ -26,7 +26,7 @@ const HomeHero = ({ title, subtitle, image }) => {
                         <Link to="/contact">Request a demo</Link>
                     </SecondaryButton>
                     <PrimaryButtonOutline size="lg" className={learnButton}>
-                        <Link to="/product">Learn more</Link>
+                        <Link to="/product#features">Learn more</Link>
                     </PrimaryButtonOutline>
                 </Col>
                 <Col sm={12} md={6} lg={7} className="text-center">

@@ -8,7 +8,7 @@ import { section, heading, image, pushMessagesRow, pushMessagesText, pushMessage
 const MobileCheckinFeatures = () => {
 
     return (
-        <Container className={section}>
+        <Container className={section} id="mobile">
 
             {/* Header and check-in flow screens */}
             <Row className="align-items-center">

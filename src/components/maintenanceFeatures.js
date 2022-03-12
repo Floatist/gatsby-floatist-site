@@ -3,20 +3,20 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack'
-import { Container } from 'react-bootstrap'
-import { sectionWithBackgroundColor, section, topRow, heading, videoCol, video, middleRow, stackedChecksText, checksCol, thirdRow, featureCol, featureText } from './maintenanceFeatures.module.css'
+import Container from 'react-bootstrap/Container'
+import { sectionWithBackgroundColor, section, topRow, heading, video, middleRow, stackedChecksText, checksCol, thirdRow, featureCol, featureText } from './maintenanceFeatures.module.css'
 
 const MaintenanceFeatures = () => {
 
     return (
-        <Container fluid className={sectionWithBackgroundColor}>
+        <Container fluid className={sectionWithBackgroundColor} id="maintenance">
             <Container className={section}>
                 {/* Heading plus moving video */}
                 <Row className={topRow}>
                     <Col md={6} className={heading}>
                         <h1>Schedule, track, create and assign maintenance issues <span style={{ color: "#0097BE" }}>from the backoffice and the mobile app.</span></h1>
                     </Col>
-                    <Col md={6} className={videoCol}>
+                    <Col md={6}>
                         <video className={video} autoPlay muted loop>
                             <source src="/maintenance.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -55,7 +55,7 @@ const MaintenanceFeatures = () => {
                 </Row>
 
                 {/* Two features with icon */}
-                <Row className={thirdRow}>
+                <Row className={thirdRow} id="reporting">
 
                     <Col md={6} className={featureCol}>
                         <div>
