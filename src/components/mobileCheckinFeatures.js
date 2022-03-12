@@ -1,11 +1,9 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Stack from 'react-bootstrap/Stack'
 import { Container } from 'react-bootstrap'
-import { section, text, image, pushMessagesRow, pushMessagesText, pushMessagesTitle, featureCol, featuresRow, featureIcon, featureText } from './mobileCheckinFeatures.module.css'
+import { section, heading, image, pushMessagesRow, pushMessagesText, pushMessagesTitle, featureCol, featuresRow, featureIcon, featureText } from './mobileCheckinFeatures.module.css'
 
 const MobileCheckinFeatures = () => {
 
@@ -14,7 +12,7 @@ const MobileCheckinFeatures = () => {
 
             {/* Header and check-in flow screens */}
             <Row className="align-items-center">
-                <Col md={5} className={text}>
+                <Col md={5} className={heading}>
                     <h1>
                         <span style={{ color: "#0097BE" }}>Empower your customers to self check-in / out,</span> and familiarise themselves even before arrival.
                     </h1>

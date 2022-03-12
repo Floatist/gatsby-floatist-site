@@ -15,15 +15,9 @@ SAND BEIGE #F4F3F0
 
 Fontawesome:
 Calendar: 
-<i class="fa-solid fa-calendar-lines"></i>
 
-<i class="fa-solid fa-wrench"></i>
-<i class="fa-solid fa-mobile-notch"></i>
-<i class="fa-solid fa-file-certificate"></i>
 <i class="fa-solid fa-file-chart-column"></i>
 
-
-<i class="fa-solid fa-arrow-right"></i>
 
 
 

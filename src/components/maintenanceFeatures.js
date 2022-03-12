@@ -5,28 +5,74 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack'
 import { Container } from 'react-bootstrap'
-import { section } from './maintenanceFeatures.module.css'
+import { sectionWithBackgroundColor, section, topRow, heading, videoCol, video, middleRow, stackedChecksText, checksCol, thirdRow, featureCol, featureText } from './maintenanceFeatures.module.css'
 
 const MaintenanceFeatures = () => {
 
     return (
-        <Container fluid className={section}>
+        <Container fluid className={sectionWithBackgroundColor}>
+            <Container className={section}>
+                {/* Heading plus moving video */}
+                <Row className={topRow}>
+                    <Col md={6} className={heading}>
+                        <h1>Schedule, track, create and assign maintenance issues <span style={{ color: "#0097BE" }}>from the backoffice and the mobile app.</span></h1>
+                    </Col>
+                    <Col md={6} className={videoCol}>
+                        <video className={video} autoPlay muted loop>
+                            <source src="/maintenance.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </Col>
+                </Row>
 
-        <Container>
-            <Row>
-                <Col>
-                    <h1>
-                        Schedule, track, create and assign maintenance issues from the backoffice and the mobile app.
-                    </h1>
-                </Col>
-                <Col>
-                    <video width="320" height="240" autoPlay muted loop>
-                        <source src="/maintenance.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </Col>
-            </Row>
-        </Container>
+                {/* maintenance graphic and three stacked features with check icon*/}
+                <Row className={middleRow}>
+                    <Col md={6}>
+                        <StaticImage
+                            src="../images/maintenance.png"
+                            className="img-fluid mx-auto d-block"
+                            alt="push-notifications"
+                            imgStyle={{ objectFit: "contain" }}
+                        />
+                    </Col>
+
+                    <Col md={6} className={checksCol}>
+                        <Stack >
+                            <div>
+                                <i class="fa-solid fa-circle-check fa-xl" style={{ color: "#0097BE" }}></i>
+                                <p className={stackedChecksText}>Create maintenance issues during check-out</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-check fa-xl" style={{ color: "#0097BE" }}></i>
+                                <p className={stackedChecksText}>Attach photos, set due dates, and assign to team members</p>
+
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-check fa-xl" style={{ color: "#0097BE" }}></i>
+                                <p className={stackedChecksText}>Perform routine maintenance per manufacturer's recommendations templates</p>
+                            </div>
+                        </Stack>
+                    </Col>
+                </Row>
+
+                {/* Two features with icon */}
+                <Row className={thirdRow}>
+
+                    <Col md={6} className={featureCol}>
+                        <div>
+                            <i class="fa-solid fa-download fa-4x"></i>
+                            <p className={featureText}>Download reports for advanced analytics and sharing with third parties.</p>
+                        </div>
+                    </Col>
+
+                    <Col md={6} className={featureCol}>
+                        <div>
+                            <i class="fa-solid fa-laptop fa-4x"></i>
+                            <p className={featureText}>Provide a login for yacht owners and empower them to stay informed about their yacht's data.</p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </Container>
 
     )
