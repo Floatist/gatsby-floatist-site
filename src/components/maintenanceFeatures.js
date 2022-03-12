@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack'
@@ -68,7 +67,7 @@ const MaintenanceFeatures = () => {
                     <Col md={6} className={featureCol}>
                         <div>
                             <i class="fa-solid fa-laptop fa-4x"></i>
-                            <p className={featureText}>Provide a login for yacht owners and empower them to stay informed about their yacht's data.</p>
+                            <p className={featureText}>Empower yacht owners to view their yacht's data by providing a dedicated login to their dashboard.</p>
                         </div>
                     </Col>
                 </Row>

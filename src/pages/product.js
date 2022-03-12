@@ -14,6 +14,7 @@ import { Row } from 'react-bootstrap'
 import FeaturesSummary from '../components/featuresSummary'
 import MobileCheckinFeatures from '../components/mobileCheckinFeatures'
 import MaintenanceFeatures from '../components/maintenanceFeatures'
+import PaperworkFeatures from '../components/paperworkFeatures'
 
 
 const ProductPage = ({ data }) => {
@@ -44,47 +45,11 @@ const ProductPage = ({ data }) => {
 
         {/* NEW SECTION WITH OVERVIEW FEATURES */}
         <FeaturesSummary />
-
-
-
-        {/* CHECK IN */}
         <MobileCheckinFeatures />
-
-
-
-        {/* MAINTENANCE */}
         <MaintenanceFeatures />
-
-
-        {/* temp */}
+        <PaperworkFeatures />
         
-
-
-
-
-
-        {/* TWO ROWS COMPONENT: Platform + mobile check in*/}
-        {/* <TwoFeatures
-          topFeatureTitle="Floatist provides the complete fleet management solution that’s easy to use and scales with your business."
-          topFeatureSubtitle="Empower your customers to self check-in, handle paperwork through the app, and streamline your maintenance tasks between charters."
-          topFeatureImage={getImage(data.connectedPlatform)}
-          bottomFeatureTitle="Offer self check-in to your customers"
-          bottomFeatureSubtitle="Customers can complete check-in at their own pace – while your staff have their hands free to assist where needed."
-          bottomFeatureImage={getImage(data.mobileCheckin)}
-          backgroundColor="#F4F3F0"
-        /> */}
-
-        {/* TWO ROWS COMPONENT:  Maintenance + Reporting */}
-        {/* <TwoFeatures
-          topFeatureTitle="Manage issues from one unified place"
-          topFeatureSubtitle="Make it easier to track, prioritize, assign and respond to issues with one unified workspace, from the browser to the mobile app."
-          topFeatureImage={getImage(data.maintenance)}
-          bottomFeatureTitle="Report back to stakeholders with ease"
-          bottomFeatureSubtitle="Save yourself from end-of-quarter admin by enabling yacht owners to access their yacht's log in real-time."
-          bottomFeatureImage={getImage(data.reporting)}
-          backgroundColor="white"
-        /> */}
-
+        {/* ACTIVATION */}
         <Activation
           title="Take the lead"
           buttonText="Request a demo"
