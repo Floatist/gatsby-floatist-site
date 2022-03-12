@@ -15,7 +15,7 @@ const ProductHero = ({ title, subtitle, image }) => {
     }
 
     return (
-        <Container fluid className={heroSection}>
+        <Container className={heroSection}>
             <Row className={row}>
                 <Col sm={12} md={6} lg={6} className={heroText}>
                     <h1 style={titleStyle}>{title}</h1>

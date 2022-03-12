@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack'
 import { Container } from 'react-bootstrap'
-import { section, container, text, icon, arrow, paragraph, featureTitle, rectangle, square, row, col } from './featuresSummary.module.css'
+import { section, container, text, icon, arrow, paragraph, featureTitle, featureParagraph, rectangle, square, row, col } from './featuresSummary.module.css'
 
 const FeaturesSummary = () => {
 
@@ -19,7 +19,7 @@ const FeaturesSummary = () => {
             <Container className={container}>
                 <div className={text}>
                     <h1 style={titleStyle}>Work more efficiently</h1>
-                    <p className={paragraph}>Work from a unified platform - no matter if your staff is on the dock or in the office.</p>
+                    <p className={paragraph}>Work from a unified platform - no matter if you are on the dock or in the office.</p>
                 </div>
 
                 <Row>
@@ -29,6 +29,7 @@ const FeaturesSummary = () => {
                             <h5 className={featureTitle}>
                                 Mobile check-in / out
                             </h5>
+                            <p className={featureParagraph}>Empower your customers to self check-in / out, and familiarise themselves even before arrival.</p>
                             <div className={arrow}><i class="fa-solid fa-arrow-right-long fa-xl"></i></div>
                         </div>
                     </Col>
@@ -37,6 +38,7 @@ const FeaturesSummary = () => {
                         <div className={square}>
                             <div className={icon}><i class="fa-solid fa-wrench fa-2x"></i></div>
                             <h5 className={featureTitle}>Maintenance hub</h5>
+                            <p className={featureParagraph}>Schedule, track, create and assign issues from the backoffice and the mobile app</p>
                             <div className={arrow}><i class="fa-solid fa-arrow-right-long fa-xl"></i></div>
                         </div>
                     </Col>

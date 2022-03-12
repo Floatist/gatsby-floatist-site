@@ -18,6 +18,7 @@ Calendar:
 <i class="fa-solid fa-calendar-lines"></i>
 
 <i class="fa-solid fa-wrench"></i>
+<i class="fa-solid fa-mobile-notch"></i>
 <i class="fa-solid fa-file-certificate"></i>
 <i class="fa-solid fa-file-chart-column"></i>
 
@@ -26,11 +27,4 @@ Calendar:
 
 
 
-video
-<i class="fa-brands fa-youtube"></i>
-
-info
-<i class="fa-duotone fa-info"></i>
-
-hands free
-<i class="fa-solid fa-business-time"></i>
+<i class="fa-solid fa-laptop-mobile"></i>
