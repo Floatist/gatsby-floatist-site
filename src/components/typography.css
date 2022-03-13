@@ -1,9 +1,14 @@
 @font-face {
     font-family: 'Larsseit';
-    src: local('Larsseit'), url('../fonts/larsseit/Larsseit.otf') format('truetype');
+    src: url('../fonts/larsseit/Larsseit.otf'), local('Larsseit');
 }
 
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue/HelveticaNeue.ttf'), local('Helvetica Neue');
+}
+
+@font-face {
+    font-family: 'Visuelt pro';
+    src: url('../fonts/visueltpro/VisueltPro-Regular.ttf'), local('Visuelt Pro');
 }

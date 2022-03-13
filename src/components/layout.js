@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Helmet from 'react-helmet';
 import { withPrefix, useStaticQuery, graphql } from 'gatsby'
 
+import layout from './layout.module.css'
 import Navigation from './navigation'
 import Footer from './footer';
 
