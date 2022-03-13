@@ -7,8 +7,3 @@
     font-family: 'Helvetica Neue';
     src: url('../fonts/helveticaneue/HelveticaNeue.ttf'), local('Helvetica Neue');
 }
-
-@font-face {
-    font-family: 'Visuelt pro';
-    src: url('../fonts/visueltpro/VisueltPro-Regular.ttf'), local('Visuelt Pro');
-}

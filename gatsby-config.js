@@ -39,7 +39,11 @@ module.exports = {
           icon: 'src/images/favicon.ico',
         }
       },
-      "gatsby-transformer-ffmpeg",
-      "gatsby-plugin-ffmpeg"
+      {
+        resolve: "gatsby-plugin-anchor-links",
+        options: {
+          offset: -80
+        }
+      }
     ]
 }

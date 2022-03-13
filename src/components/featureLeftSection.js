@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Row, Col, Container } from 'react-bootstrap'
 import { text, title, subtitle, featureLink, container, row, image } from './featureLeftSection.module.css'
@@ -9,7 +9,7 @@ const FeatureLeftSection = (props) => {
 
     const createLink = () => {
         if (props.link) {
-            return <Link to={props.link} className={featureLink}>View features <i className="fa-solid fa-arrow-right"></i></Link>
+            return <AnchorLink to={props.link} className={featureLink}>View features <i className="fa-solid fa-arrow-right"></i></AnchorLink>
         } else {
             return ''
         }

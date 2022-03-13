@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -22,7 +22,7 @@ const FeaturesRow = ({ leftTitle, leftPar, middleTitle, middlePar, rightTitle, r
                         />
                         <h3 className={featureTitle}>{leftTitle}</h3>
                         <p className={paragraph}>{leftPar}</p>
-                        <Link to="/product#reporting" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <AnchorLink to="/product#reporting" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></AnchorLink>
 
                     </Col>
                     <Col md={4} className={col}>
@@ -35,7 +35,7 @@ const FeaturesRow = ({ leftTitle, leftPar, middleTitle, middlePar, rightTitle, r
                         />
                         <h3 className={featureTitle}>{middleTitle}</h3>
                         <p className={paragraph}>{middlePar}</p>
-                        <Link to="/product#paperwork" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <AnchorLink to="/product#paperwork" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></AnchorLink>
 
                     </Col>
                     <Col md={4} className={col}>
@@ -48,7 +48,7 @@ const FeaturesRow = ({ leftTitle, leftPar, middleTitle, middlePar, rightTitle, r
                         />
                         <h3 className={featureTitle}>{rightTitle}</h3>
                         <p className={paragraph}>{rightPar}</p>
-                        <Link to="/product#booking" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></Link>
+                        <AnchorLink to="/product#booking" className={featureLink}>Learn more  <i className="fa-solid fa-arrow-right"></i></AnchorLink>
 
                     </Col>
                 </Row>

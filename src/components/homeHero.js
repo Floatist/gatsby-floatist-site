@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -26,7 +27,7 @@ const HomeHero = ({ title, subtitle, image }) => {
                         <Link to="/contact">Request a demo</Link>
                     </SecondaryButton>
                     <PrimaryButtonOutline size="lg" className={learnButton}>
-                        <Link to="/product#features">Learn more</Link>
+                        <AnchorLink to="/product#features">Learn more</AnchorLink>
                     </PrimaryButtonOutline>
                 </Col>
                 <Col sm={12} md={6} lg={7} className="text-center">

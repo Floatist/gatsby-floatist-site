@@ -4,10 +4,6 @@
     right: -600px;
     height: 1200px;
     width: 1200px;
-    /* bottom: calc(-100vh/1.1); */
-    /* right: calc(-100vh/0.7); */
-    /* height: calc(100vh*1.6); */
-    /* width: calc(100vh*1.6); */
     border-radius: 100%;
     background-color: #F4F3F0;
     z-index: -1;
@@ -15,10 +11,6 @@
 
 .sandShape {
     position: absolute; 
-    /* bottom: calc(-100vh/1); */
-    /* right: calc(-100vh/1.1); */
-    /* height: calc(100vh*1.6); */
-    /* width: calc(100vh*1.6); */
     bottom: -500px;
     right: -650px;
     height: 1000px;
@@ -49,9 +41,17 @@
     }
 }
 
+.paragraph {
+    margin-bottom: 20px;
+}
+
 .text {
     margin: 20px auto 30px auto;
     max-width: 500px;
     font-family: 'poppins';
     font-weight: 300;
+}
+
+.list-item {
+    padding-bottom: 20px;
 }
