@@ -10,7 +10,7 @@ const AboutPage = ({ data }) => {
 
     const titleStyle = {
         fontSize: '60px',
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'Larsseit',
         fontWeight: 600
     }
 

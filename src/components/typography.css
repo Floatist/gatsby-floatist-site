@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Larsseit';
+    src: local('Larsseit'), url('../fonts/larsseit/Larsseit.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue/HelveticaNeue.ttf'), local('Helvetica Neue');
+}

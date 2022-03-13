@@ -7,7 +7,7 @@ import { section, activationTitle, activationButton, whiteOval } from './activat
 const Activation = ({ title, buttonText }) => {
 
     const titleStyle = {
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'Larsseit',
         fontSize: '55px',
         fontWeight: '700'
     }

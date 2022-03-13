@@ -10,7 +10,7 @@ const ProductHero = ({ title, subtitle, image }) => {
 
     const titleStyle = {
         fontSize: '50px',
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'Larsseit',
         fontWeight: '700'
     }
 

@@ -9,8 +9,8 @@ const FeaturesSummary = () => {
 
     const titleStyle = {
         fontSize: '40px',
-        fontFamily: 'Helvetica Neue',
-        fontWeight: '700'
+        fontFamily: 'Larsseit',
+        fontWeight: '600'
     }
 
     return (

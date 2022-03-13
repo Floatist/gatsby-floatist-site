@@ -8,7 +8,7 @@ import { section, text, beigeShape, sandShape, container } from './contact.modul
 const ContactPage = () => {
 
     const titleStyle = {
-        fontFamily: 'Helvetica Neue',
+        fontFamily: 'Larsseit',
         fontSize: '40px',
         fontWeight: '700'
     }

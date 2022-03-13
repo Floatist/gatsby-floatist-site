@@ -1,4 +1,9 @@
 /* GLOBAL STYLING CONFIG */
+@import "./typography.css";
+
+body {
+    font-family: 'Larsseit';
+}
 
 h1 {
     font-family: 'helvetica';
