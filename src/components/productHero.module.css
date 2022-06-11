@@ -3,23 +3,40 @@
     margin: 100px auto 0 auto;
 }
 
+.page-title {
+    font-size: 3.5rem;
+    font-family: 'Larsseit';
+}
+
 .row {
     align-items: center;
 }
 
 @media screen and (min-width: 860px) and (max-width: 1270px) {
+    .page-title {
+        font-size: 2.8rem;
+    }
+
     .hero-text {
         padding-left: 70px;
     }
 }
 
 @media screen and (min-width: 770px) and (max-width: 860px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
     .hero-text {
         padding-left: 50px;
     }
 }
 
 @media screen and (min-width: 570px) and (max-width: 770px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
     .hero-text {
         padding-left: 50px;
         padding-right: 50px;
@@ -27,6 +44,10 @@
 }
 
 @media screen and (max-width: 570px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
     .hero-text {
         padding-left: 30px;
         padding-right: 30px;

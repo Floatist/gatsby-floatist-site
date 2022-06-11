@@ -2,6 +2,11 @@
     background-color: #F4F3F0;
 }
 
+.page-title {
+    font-size: 3.5rem;
+    font-family: 'Larsseit';
+}
+
 .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -9,6 +14,11 @@
 }
 
 @media screen and (min-width: 701px) {
+    .page-title {
+        font-size: 2.5rem;
+        font-family: 'Larsseit';
+    }
+
     .container {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -17,6 +27,10 @@
 
 /* smaller screens less space between components */
 @media screen and (max-width: 700px) {
+    .page-title {
+        font-size: 2rem;
+        font-family: 'Larsseit';
+    }
     .container {
         padding-top: 50px;
         padding-bottom: 50px;

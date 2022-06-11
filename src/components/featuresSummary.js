@@ -3,21 +3,15 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Stack from 'react-bootstrap/Stack'
 import { Container } from 'react-bootstrap'
-import { section, container, link, text, icon, arrow, paragraph, featureTitle, featureParagraph, rectangle, square, col } from './featuresSummary.module.css'
+import { pageTitle, section, container, link, text, icon, arrow, paragraph, featureTitle, featureParagraph, rectangle, square, col } from './featuresSummary.module.css'
 
 const FeaturesSummary = () => {
-
-    const titleStyle = {
-        fontSize: '40px',
-        fontFamily: 'Larsseit',
-        fontWeight: '600'
-    }
 
     return (
         <div className={section}>
             <Container className={container} id="features">
                 <div className={text}>
-                    <h1 style={titleStyle}>Work more efficiently</h1>
+                    <h1 className={pageTitle}>Work more efficiently</h1>
                     <p className={paragraph}>Work from a unified platform - no matter if you are on the dock or in the office.</p>
                 </div>
 
