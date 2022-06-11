@@ -59,7 +59,6 @@ const Navigation = () => {
 
                 <Navbar.Toggle className={navbarCollapse} />
 
-
                 <Navbar.Collapse id="navbarResponsive" className={navbarCollapse}>
                     <Nav as="ul">
                         <Nav.Item as="li" className={navItem}>
@@ -81,13 +80,9 @@ const Navigation = () => {
                                     <Link to="/contact"><i className="fa-solid fa-envelope"></i> Contact us</Link>
                                 </SecondaryButton>
                             </Stack>
-
                         </Nav.Item >
                     </Nav>
                 </Navbar.Collapse>
-
-
-
             </Container>
         </Navbar>
     )

@@ -1,9 +1,11 @@
-
-
 .container {
     position: relative;
     overflow: hidden;
     padding: 0;
+}
+
+.page-header {
+    font-family: 'Larsseit';
 }
 
 .row {
@@ -46,6 +48,10 @@
 
 /* LARGE SCREENS */
 @media screen and (min-width: 1000px) {
+    .page-header {
+        font-size: 3rem;
+    }
+
     .section {
         max-width: 950px;
         margin: 150px auto 100px auto;
@@ -84,6 +90,10 @@
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 600px) and (max-width: 1000px) {
+    .page-header {
+        font-size: 2rem;
+    }
+
     .section {
         max-width: 950px;
         margin: 150px auto 100px auto;
@@ -96,11 +106,13 @@
 
 /* SMALL SCREEN WIDTH */
 @media screen and (max-width: 600px) {
+    .page-header {
+        font-size: 1.5rem;
+    }
     .section {
-        margin: 110px auto 100px auto;
-        text-align: left;
+        margin: 100px auto 20px auto;
+        text-align: center;
         padding: 30px;
-        font-size: smaller;
     }
     .team-section {
         padding: 30px;

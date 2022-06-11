@@ -8,17 +8,17 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Card from 'react-bootstrap/Card'
 import Layout from '../components/layout'
-import { section, teamSection, teamHeader, teamItem, card, row, personName, role, container, paragraph, blueShape, beigeShape } from './about.module.css'
+import { section, pageHeader, teamSection, teamHeader, teamItem, card, row, personName, role, container, paragraph, blueShape, beigeShape } from './about.module.css'
 
 const AboutPage = ({ data }) => {
 
   console.log(data)
 
-  const titleStyle = {
-    fontSize: '60px',
-    fontFamily: 'Larsseit',
-    fontWeight: 600
-  }
+  // const titleStyle = {
+  //   fontSize: '60px',
+  //   fontFamily: 'Larsseit',
+  //   fontWeight: 600
+  // }
 
   return (
     <Layout pageTitle="About us">
@@ -26,12 +26,12 @@ const AboutPage = ({ data }) => {
         <div className={blueShape}></div>
         <div className={beigeShape}></div>
         <Container fluid className={section}>
-          <h1 style={titleStyle}>Make running a charter company simpler, more fun and more streamlined.</h1>
+          <h1 className={pageHeader}>Make running a charter company simpler, more fun and more streamlined.</h1>
           <p className={paragraph}>Floatist is the productivity tool that brings all your information, people, and tools together to run your business. It improves your customers' experience, and makes your staff lives' easier from charter to charter. It is the tool that everyone in the yacht charter industry is waiting for.
           </p>
         </Container>
         <Container fluid className={teamSection}>
-        
+
           <Row className={row}>
             <Col lg={12} className={teamHeader}>
               <h1>Our team</h1>
@@ -62,9 +62,8 @@ const AboutPage = ({ data }) => {
             }
 
           </Row>
+        </Container>
       </Container>
-      </Container>
-
     </Layout>
   )
 }
