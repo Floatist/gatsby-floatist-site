@@ -66,7 +66,7 @@ const Navigation = () => {
                             <Link to="/product" className="nav-link" activeClassName="active">Product</Link>
                         </Nav.Item>
                         <Nav.Item as="li" className={navItem}>
-                            <Link to="/about" className="nav-link" activeClassName="active">About</Link>
+                            <Link to="/about" className="nav-link" activeClassName="active">About us</Link>
                         </Nav.Item >
                         {/* <Nav.Item as="li" className={navItem}>
                             <Link to="/blog" className="nav-link" activeClassName="active">Blog</Link>
@@ -76,7 +76,7 @@ const Navigation = () => {
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
                             <Stack direction="horizontal" gap={4}>
-                                <Link to="/contact" className={navLogin}>Sign in</Link>
+                                {/* <Link to="https://cockpit.floatist.com" className={navLogin}>Sign in</Link> */}
                                 <SecondaryButton className={navButton}>
                                     <Link to="/contact"><i className="fa-solid fa-envelope"></i> Contact us</Link>
                                 </SecondaryButton>

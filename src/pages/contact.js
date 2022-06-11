@@ -38,11 +38,9 @@ const ContactPage = () => {
                             </ul>
                             <h5>Prefer contacting us directly?</h5>
                             <p>Phone</p>
-                            <p>🇬🇷 +30 21 1199 6021 </p>
-                            <p>🇵🇹 +351 308 813 839 </p>
-                            <p className={paragraph}>🇺🇸 +1 954 280 9863 </p>
+                            <p className={paragraph}>🇬🇷 +30 697 5508772 </p>
                             <p>Email</p>
-                            <p>hello@floatist.com</p>
+                            <p>cindy@floatist.com</p>
                         </Container>
                     </Col>
 

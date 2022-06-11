@@ -11,36 +11,35 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 const BlogPage = ({ data }) => {
 
-    return (
-        <Layout pageTitle="Blog">
-            <Container fluid className={section}>
-                <Row>
-                    {
-                        data.allMdx.nodes.map((node) => (
-                            <Col sm={6} md={3}>
-                                
-                                <article key={node.id}>
-                                <Link to={`/blog/${node.frontmatter.slug}`}>
-                                    <GatsbyImage 
-                                        image={getImage(node.frontmatter.hero_image.childImageSharp)}
-                                        className={image}
-                                    />
-                                    <p className={category}>{node.frontmatter.category}</p>
-                                    <h5 className={title}>
-                                        {node.frontmatter.title}
-                                    </h5>
-                                    </Link>
-                                    <p className={abstract}>{node.frontmatter.abstract}</p>
-                                </article>
-                                
-                            </Col>
-                        ))
-                    }
-                </Row>
-            </Container>
+  return (
+    <Layout pageTitle="Blog">
+      <Container fluid className={section}>
+        <Row>
+          {
+            data.allMdx.nodes.map((node) => (
+              <Col sm={6} md={3}>
 
-        </Layout>
-    )
+                <article key={node.id}>
+                  <Link to={`/blog/${node.frontmatter.slug}`}>
+                    <GatsbyImage
+                      image={getImage(node.frontmatter.hero_image.childImageSharp)}
+                      className={image}
+                    />
+                    <p className={category}>{node.frontmatter.category}</p>
+                    <h5 className={title}>
+                      {node.frontmatter.title}
+                    </h5>
+                  </Link>
+                  <p className={abstract}>{node.frontmatter.abstract}</p>
+                </article>
+
+              </Col>
+            ))
+          }
+        </Row>
+      </Container>
+    </Layout>
+  )
 }
 
 export const query = graphql`

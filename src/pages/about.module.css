@@ -1,44 +1,109 @@
-.blue-shape {
-    color: white;
-    width: 200px;
-    height: 200px;
-    background-color: #0097BE;
-    top: 320px;
-    left: -160px;
-    border-radius: 100%;
-    position: absolute;
-}
 
-.beige-shape {
-    color: white;
-    width: 200px;
-    height: 320px;
-    background-color: #DDD1C5;
-    top: 100px;
-    right: -150px;
-    border-radius: 70%;
-    position: absolute;
-}
 
 .container {
     position: relative;
     overflow: hidden;
+    padding: 0;
 }
 
-/* MEDIUM AND LARGE SCREENS */
-@media screen and (min-width: 400px) {
+.row {
+    /* max-width: 950px; */
+    display: flex;
+    justify-content: center;
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F0;
+}
+
+.team-item {
+    display: flex;
+    justify-content: center;
+}
+
+.team-header {
+    display: flex;
+}
+
+.person-name {
+    margin-top: 20px;
+}
+
+.role {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 20px 10px 20px 10px;
+    max-width: 700px;
+    width: 100%;
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1000px) {
     .section {
         max-width: 950px;
         margin: 150px auto 100px auto;
         text-align: center;
     }
+    .team-section {
+        padding: 120px;
+    }
+
+    .row {
+        max-width: 1050px;
+    }
+
+    .blue-shape {
+        color: white;
+        width: 200px;
+        height: 200px;
+        background-color: #0097BE;
+        top: 320px;
+        left: -160px;
+        border-radius: 100%;
+        position: absolute;
+    }
+    
+    .beige-shape {
+        color: white;
+        width: 200px;
+        height: 320px;
+        background-color: #DDD1C5;
+        top: 100px;
+        right: -150px;
+        border-radius: 70%;
+        position: absolute;
+    }
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .section {
+        max-width: 950px;
+        margin: 150px auto 100px auto;
+        text-align: center;
+    }
+    .team-section {
+        padding: 100px;
+    }
 }
 
 /* SMALL SCREEN WIDTH */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .section {
-        margin: 200px auto 100px auto;
+        margin: 110px auto 100px auto;
         text-align: left;
+        padding: 30px;
+        font-size: smaller;
+    }
+    .team-section {
+        padding: 30px;
     }
 }
 

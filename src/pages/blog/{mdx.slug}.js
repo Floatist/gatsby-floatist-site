@@ -49,12 +49,7 @@ const BlogPost = ({ data }) => {
           {data.mdx.body}
         </MDXRenderer>
       </Container>
-
-
-
-
-
-
+      
     </Layout>
   )
 }

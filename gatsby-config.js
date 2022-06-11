@@ -17,6 +17,13 @@ module.exports = {
       {
         resolve: "gatsby-source-filesystem", // query data using graphql
         options: {
+          name: `about`,
+          path: `${__dirname}/content/about`,
+        }
+      },
+      {
+        resolve: "gatsby-source-filesystem", // query data using graphql
+        options: {
           name: `blog`,
           path: `${__dirname}/content`,
         }
