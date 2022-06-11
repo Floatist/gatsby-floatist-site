@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfloatist_site=self.webpackChunkfloatist_site||[]).push([[276],{8488:function(e,t,l){l.r(t);var n=l(7294),u=l(3639),a=l(949);t.default=function(){return n.createElement(a.Z,{pageTitle:"Support"},n.createElement(u.Z,null,n.createElement("p",null,"Support page")))}}}]);
+//# sourceMappingURL=component---src-pages-support-js-1865b4224d8ac0cc0fce.js.map

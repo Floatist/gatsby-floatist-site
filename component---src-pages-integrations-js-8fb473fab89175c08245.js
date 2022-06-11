@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfloatist_site=self.webpackChunkfloatist_site||[]).push([[186],{2823:function(e,t,n){n.r(t);var a=n(7294),s=n(949);t.default=function(){return a.createElement(s.Z,{pageTitle:"Integrations"},a.createElement("p",null,"Integrations"))}}}]);
+//# sourceMappingURL=component---src-pages-integrations-js-8fb473fab89175c08245.js.map
