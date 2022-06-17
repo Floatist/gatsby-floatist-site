@@ -75,7 +75,7 @@ const Navigation = () => {
                     <Nav as="ul" className="ms-auto">
                         <Nav.Item as="li" className={navItem}>
                             <Stack direction="horizontal" gap={4}>
-                                {/* <Link to="https://cockpit.floatist.com" className={navLogin}>Sign in</Link> */}
+                                <Link to="https://cockpit.floatist.com" className={navLogin}>Sign in</Link>
                                 <SecondaryButton className={navButton}>
                                     <Link to="/contact"><i className="fa-solid fa-envelope"></i> Contact us</Link>
                                 </SecondaryButton>
