@@ -6,7 +6,7 @@
 }
 
 .page-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Larsseit';
 }
 
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 860px) and (max-width: 1270px) {
     .page-title {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .hero-text {
@@ -31,7 +31,7 @@
 
 @media screen and (min-width: 770px) and (max-width: 860px) {
     .page-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero-text {
