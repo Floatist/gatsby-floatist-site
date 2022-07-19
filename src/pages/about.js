@@ -43,7 +43,7 @@ const AboutPage = ({ data }) => {
                   <Card className={card} key={node.id}>
                     <GatsbyImage
                       image={getImage(node.frontmatter.profile_pic.childImageSharp)}
-                      alt="Cindy"
+                      alt="profile"
                     />
                     <Card.Body>
                       <Card.Title><h3 className={personName}>
@@ -94,16 +94,3 @@ query {
 `
 
 export default AboutPage
-
-    // cindyPhoto: file(relativePath: {eq: "cindy-profile-cropped.jpg"}) {
-    //   id
-    //   childImageSharp {
-    //     gatsbyImageData(height: 400)
-    //   }
-    // }
-    // albertPhoto: file(relativePath: {eq: "albert.jpeg"}) {
-    //   id
-    //   childImageSharp {
-    //     gatsbyImageData(height: 400)
-    //   }
-    // }
